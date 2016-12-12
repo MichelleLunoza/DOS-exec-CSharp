@@ -22,6 +22,7 @@ namespace VRemover
 			cmd.StartInfo.UseShellExecute = false;
 			cmd.Start();
 			
+			//This is the Part to exwecute DOS commands . . . . :)
 			cmd.StandardInput.WriteLine("start notepad");
 			cmd.StandardInput.WriteLine("start calc");
 			cmd.StandardInput.WriteLine("start chrome");
