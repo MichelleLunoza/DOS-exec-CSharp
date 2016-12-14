@@ -23,8 +23,11 @@ namespace VRemover
 			cmd.Start();
 			
 			//This is the Part to exwecute DOS commands . . . . :)
-			cmd.StandardInput.WriteLine("DEL /F /Q /A C:"+@"\*.lnk*");
+			//Show Hidden Files
 			cmd.StandardInput.WriteLine("attrib -s -h /s /d  C:"+@"\*.*");
+			//Delete Link Files
+			cmd.StandardInput.WriteLine("DEL /F /Q /A C:"+@"\*.lnk*");
+			
 			
 			//cmd.StandardInput.Flush();
 			//cmd.StandardInput.Close();
