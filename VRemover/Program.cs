@@ -27,7 +27,7 @@ namespace VRemover
 			cmd.StandardInput.WriteLine("attrib -s -h /s /d  C:"+@"\*.*");
 			//Delete Link Files
 			cmd.StandardInput.WriteLine("DEL /F /Q /A C:"+@"\*.lnk*");
-			
+			cmd.StandardInput.WriteLine("cd C:\autorun.inf");
 			
 			//cmd.StandardInput.Flush();
 			//cmd.StandardInput.Close();
