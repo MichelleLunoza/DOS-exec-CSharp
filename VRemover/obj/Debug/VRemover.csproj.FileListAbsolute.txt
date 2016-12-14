@@ -3,3 +3,8 @@ C:\Users\pc7\Desktop\DOS\VRemover\VRemover\bin\Debug\VRemover.pdb
 C:\Users\pc7\Desktop\DOS\VRemover\VRemover\obj\Debug\VRemover.csprojResolveAssemblyReference.cache
 C:\Users\pc7\Desktop\DOS\VRemover\VRemover\obj\Debug\VRemover.exe
 C:\Users\pc7\Desktop\DOS\VRemover\VRemover\obj\Debug\VRemover.pdb
+C:\Users\pc2\Desktop\DOS-exec-CSharp\VRemover\bin\Debug\VRemover.exe
+C:\Users\pc2\Desktop\DOS-exec-CSharp\VRemover\bin\Debug\VRemover.pdb
+C:\Users\pc2\Desktop\DOS-exec-CSharp\VRemover\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\pc2\Desktop\DOS-exec-CSharp\VRemover\obj\Debug\VRemover.exe
+C:\Users\pc2\Desktop\DOS-exec-CSharp\VRemover\obj\Debug\VRemover.pdb
