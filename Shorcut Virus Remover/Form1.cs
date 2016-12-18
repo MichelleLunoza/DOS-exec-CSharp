@@ -126,8 +126,41 @@ namespace Shorcut_Virus_Remover
                 cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.reg*");
                 textBox2.Text = textBox2.Text + "\r\n" + "Removing  malicious reg script files . . .";  
                 
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.capxml*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing capxml files . . .";                 
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.lpaq5*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing lpaq5 files . . .";   
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.pr*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing capxml files . . .";   
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.capxml*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing capxml files . . .";   
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.pr*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing pr files . . .";   
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.xnt*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing xnt files . . .";   
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.aut*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing aut files . . .";   
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.let*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing let files . . .";   
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.mcq*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing mcq files . . .";   
+                
+                
+                
+                
+                
+                textBox2.Text = textBox2.Text + "\r\n" + "No more shortcut files . . .";   
 				textBox2.SelectionStart = textBox2.Text.Length;
 				textBox2.ScrollToCaret();
+				
                 //MessageBox.Show("No more shortcut files.");
                
             }
