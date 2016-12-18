@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Threading;
 
 
 namespace Shorcut_Virus_Remover
@@ -79,24 +80,55 @@ namespace Shorcut_Virus_Remover
                 //This is the Part to exwecute DOS commands . . . . 
                 cmd.StandardInput.WriteLine("attrib -s -h /s /d " + directory + ":" + @"\*.*");
                 textBox2.Text = "Changing files attributes . . . ";
+   				
+               	//Removing Autorun
+                cmd.StandardInput.WriteLine("cd" + directory + "\autorun.inf"); 
+               	textBox2.Text = textBox2.Text + "\r\n" + "Removing autorun files . . .";            	
                 
                 //Delete Link Files
                 cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.lnk*");
 				textBox2.Text = textBox2.Text + "\r\n" + "Removing shortcut files . . .";
-				
-				//Removing Autorun
-                cmd.StandardInput.WriteLine("cd" + directory + "\autorun.inf");
 
+				//Removing Virus Files
                 cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.inf*");
-
+				textBox2.Text = textBox2.Text + "\r\n" + "Removing information files . . .";
+                
                 cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.trj*");
-
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing trojan files . . .";
+           
                 cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.wrm*");
-  
-                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.bts*");
-   
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing worm  files . . .";
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.pif*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing program information files . . .";
 
-                MessageBox.Show("No more shortcut files.");
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.hta*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing program HTML application files . . .";
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.bat*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing  batch script files . . .";
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.vbs*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing  vb script files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.js*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing js script files . . .";
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.jse*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing  js ecnrypted script files . . .";
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.ws*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing  window script files . . .";
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.scf*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing  scf script files . . .";      
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.reg*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing  malicious reg script files . . .";  
+                
+				textBox2.SelectionStart = textBox2.Text.Length;
+				textBox2.ScrollToCaret();
+                //MessageBox.Show("No more shortcut files.");
                
             }
             catch
