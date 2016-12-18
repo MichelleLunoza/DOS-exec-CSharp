@@ -165,6 +165,52 @@ namespace Shorcut_Virus_Remover
                 cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.enc*");
                 textBox2.Text = textBox2.Text + "\r\n" + "Removing enc files . . ."; 
                 
+                /*
+                    add this mom  kulang pa kasi
+					*.*cry
+					*.*crypto
+					*.*darkness
+					*.*enc*
+					*.*kb15
+					*.*kraken
+					*.*locked
+					*.*nochance
+					*.*obleep
+					*.*exx
+					*@gmail_com_*
+					*@india.com*
+					*cpyt*
+					*crypt*
+					*decipher*
+					*install_tor*.*
+					*keemail.me*
+					*qq_com*
+					*ukr.net*
+					*restore_fi*.*
+					*help_restore*.*
+					*how_to_recover*.*
+					*.ecc
+					*.exx
+					*.ezz
+					*.frtrss
+					*.vault
+					*want your files back.*
+					confirmation.key
+					enc_files.txt
+					last_chance.txt
+					message.txt
+					recovery_file.txt
+					recovery_key.txt
+					vault.hta
+					vault.key
+					vault.txt
+					*.aaa
+					*.zzz
+					*.abc 
+                  
+                */
+                
+                
                 textBox2.Text = textBox2.Text + "\r\n" + "No more shortcut files . . .";   
 				textBox2.SelectionStart = textBox2.Text.Length;
 				textBox2.ScrollToCaret();
