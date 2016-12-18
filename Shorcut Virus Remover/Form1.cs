@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
-using System.Threading;
+//using System.Threading;
 
 
 namespace Shorcut_Virus_Remover
@@ -63,7 +63,8 @@ namespace Shorcut_Virus_Remover
                 MessageBox.Show("Integer is not allowed.");
             }
 
-
+			System.Windows.Forms.Timer t = new System.Windows.Forms.Timer();
+			t.Interval = 1000;
             Process cmd = new Process();
             cmd.StartInfo.FileName = "cmd.exe";
             cmd.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
@@ -73,13 +74,15 @@ namespace Shorcut_Virus_Remover
             cmd.StartInfo.UseShellExecute = false;
             cmd.Start();
 
-            
+
             string directory = textBox1.Text;
             try
             {
                 //This is the Part to exwecute DOS commands . . . . 
                 cmd.StandardInput.WriteLine("attrib -s -h /s /d " + directory + ":" + @"\*.*");
                 textBox2.Text = "Changing files attributes . . . ";
+				t.Start();
+				t.Stop();
    				
                	//Removing Autorun
                 cmd.StandardInput.WriteLine("cd" + directory + "\autorun.inf"); 
@@ -152,10 +155,6 @@ namespace Shorcut_Virus_Remover
                 
                 cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.mcq*");
                 textBox2.Text = textBox2.Text + "\r\n" + "Removing mcq files . . .";   
-                
-                
-                
-                
                 
                 textBox2.Text = textBox2.Text + "\r\n" + "No more shortcut files . . .";   
 				textBox2.SelectionStart = textBox2.Text.Length;
