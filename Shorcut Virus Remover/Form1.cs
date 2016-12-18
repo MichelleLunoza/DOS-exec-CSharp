@@ -78,20 +78,23 @@ namespace Shorcut_Virus_Remover
             {
                 //This is the Part to exwecute DOS commands . . . . 
                 cmd.StandardInput.WriteLine("attrib -s -h /s /d " + directory + ":" + @"\*.*");
-                textBox2.Text = "NZXXZN \n";
+                textBox2.Text = "Changing files attributes . . . ";
+                
                 //Delete Link Files
                 cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.lnk*");
-                textBox2.Text = "\n :|";
+				textBox2.Text = textBox2.Text + "\r\n" + "Removing shortcut files . . .";
+				
+				//Removing Autorun
                 cmd.StandardInput.WriteLine("cd" + directory + "\autorun.inf");
-                textBox2.Text = "\n :|";
+
                 cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.inf*");
-                textBox2.Text = "\n :|";
+
                 cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.trj*");
-                textBox2.Text = "\n :|";
+
                 cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.wrm*");
-                textBox2.Text = "\n :|";
+  
                 cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.bts*");
-                textBox2.Text = "\n :|";
+   
 
                 MessageBox.Show("No more shortcut files.");
                
