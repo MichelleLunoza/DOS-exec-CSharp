@@ -156,11 +156,20 @@ namespace Shorcut_Virus_Remover
                 cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.mcq*");
                 textBox2.Text = textBox2.Text + "\r\n" + "Removing mcq files . . .";   
                 
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.cry*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing cry files . . ."; 
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.crypto*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing crypto files . . ."; 
+                
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.enc*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing enc files . . ."; 
+                
                 textBox2.Text = textBox2.Text + "\r\n" + "No more shortcut files . . .";   
 				textBox2.SelectionStart = textBox2.Text.Length;
 				textBox2.ScrollToCaret();
 				
-                //MessageBox.Show("No more shortcut files.");
+                MessageBox.Show("No more shortcut files.");
                
             }
             catch
