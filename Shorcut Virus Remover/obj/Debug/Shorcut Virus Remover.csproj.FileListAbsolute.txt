@@ -16,3 +16,12 @@ C:\Users\PC 4\Documents\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut_
 C:\Users\PC 4\Documents\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut Virus Remover.csproj.GenerateResource.Cache
 C:\Users\PC 4\Documents\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut Virus Remover.exe
 C:\Users\PC 4\Documents\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut Virus Remover.pdb
+C:\Users\MiGutierrez\Desktop\DOS-exec-CSharp\Shorcut Virus Remover\bin\Debug\Shorcut Virus Remover.exe.config
+C:\Users\MiGutierrez\Desktop\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut Virus Remover.exe
+C:\Users\MiGutierrez\Desktop\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut Virus Remover.pdb
+C:\Users\MiGutierrez\Desktop\DOS-exec-CSharp\Shorcut Virus Remover\bin\Debug\Shorcut Virus Remover.exe
+C:\Users\MiGutierrez\Desktop\DOS-exec-CSharp\Shorcut Virus Remover\bin\Debug\Shorcut Virus Remover.pdb
+C:\Users\MiGutierrez\Desktop\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut Virus Remover.csprojResolveAssemblyReference.cache
+C:\Users\MiGutierrez\Desktop\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut_Virus_Remover.Form1.resources
+C:\Users\MiGutierrez\Desktop\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut_Virus_Remover.Properties.Resources.resources
+C:\Users\MiGutierrez\Desktop\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut Virus Remover.csproj.GenerateResource.Cache

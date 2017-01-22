@@ -163,59 +163,102 @@ namespace Shorcut_Virus_Remover
                 textBox2.Text = textBox2.Text + "\r\n" + "Removing crypto files . . ."; 
                 
                 cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.enc*");
-                textBox2.Text = textBox2.Text + "\r\n" + "Removing enc files . . ."; 
-                
-                /*
-                    add this mom  kulang pa kasi
-					*.*cry
-					*.*crypto
-					*.*darkness
-					*.*enc*
-					*.*kb15
-					*.*kraken
-					*.*locked
-					*.*nochance
-					*.*obleep
-					*.*exx
-					*@gmail_com_*
-					*@india.com*
-					*cpyt*
-					*crypt*
-					*decipher*
-					*install_tor*.*
-					*keemail.me*
-					*qq_com*
-					*ukr.net*
-					*restore_fi*.*
-					*help_restore*.*
-					*how_to_recover*.*
-					*.ecc
-					*.exx
-					*.ezz
-					*.frtrss
-					*.vault
-					*want your files back.*
-					confirmation.key
-					enc_files.txt
-					last_chance.txt
-					message.txt
-					recovery_file.txt
-					recovery_key.txt
-					vault.hta
-					vault.key
-					vault.txt
-					*.aaa
-					*.zzz
-					*.abc 
-                  
-                */
-                
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing enc files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.darkness*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing darkness files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.kb15*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing kb15 files . . ."; 
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.kraken*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing kraken files . . ."; 
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.locked*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing locked files . . ."; 
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.nochance*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing nochance files . . ."; 
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.obleep*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing obleep files . . ."; 
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.exx*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing exx files . . ."; 
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.@gmail_com_*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing @gmail_com_ files . . ."; 
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.@india.com*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing @india.com files . . ."; 
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.decipher*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing decipher files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.@india.com*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing @india.com files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.keemail.me*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing keemail.me files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.qq_com*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing qq_com files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.ukr.net*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing ukr.net files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.restore_fi*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing restore_fi files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.restore_fi*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing restore_fi files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.help_restore*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing help_restore files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.ecc*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing ecc files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.exx*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing ezz files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.frtss*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing frtss files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.vault*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing vault files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.enc_files*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing enc_files files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.vault.hta*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing vault.hta files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.message.txt*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing message.txt files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.aaa*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing aaa files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.vault.key*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing vault.key files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.vault.txt*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing vault.txt files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.zzz*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing zzz files . . .";
+
+                cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.abc*");
+                textBox2.Text = textBox2.Text + "\r\n" + "Removing abc files . . .";
+
                 
                 textBox2.Text = textBox2.Text + "\r\n" + "No more shortcut files . . .";   
 				textBox2.SelectionStart = textBox2.Text.Length;
 				textBox2.ScrollToCaret();
 				
                 MessageBox.Show("No more shortcut files.");
+                Application.Exit();
                
             }
             catch
