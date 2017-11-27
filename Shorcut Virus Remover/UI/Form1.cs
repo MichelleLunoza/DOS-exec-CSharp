@@ -13,15 +13,18 @@ using System.Diagnostics;
 namespace Shorcut_Virus_Remover
 {
     public partial class Form1 : Form
-    {
+{
         public Form1()
         {
             InitializeComponent();
+        
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
+            textBox2.Show();
+            textBox1.Enabled = false;
 
             if (textBox1.Text == "0")
             {
@@ -73,6 +76,12 @@ namespace Shorcut_Virus_Remover
                 textBox1.Clear();
                 textBox1.Focus();
             }
+            else if (textBox1.Text == "")
+            {
+                MessageBox.Show("Please enter drive letter.");
+                textBox1.Clear();
+                textBox1.Focus();
+            }
             else
             {
                 Process cmd = new Process();
@@ -85,7 +94,7 @@ namespace Shorcut_Virus_Remover
                 cmd.StartInfo.UseShellExecute = false;
                 cmd.Start();
 
-
+    
                 string directory = textBox1.Text;
                 try
                 {
@@ -258,9 +267,13 @@ namespace Shorcut_Virus_Remover
                     cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.abc*");
                     textBox2.Text = textBox2.Text + "\r\n" + "Removing abc files . . .";
 
-                    MessageBox.Show("No more shortcut files.");
-                    textBox1.Clear();
-                    textBox2.Clear();
+                        textBox1.Clear();
+                        textBox2.Clear();
+                
+
+                    textBox1.Enabled = true;
+                    textBox2.Hide();
+               
                 }
 
 
@@ -273,5 +286,28 @@ namespace Shorcut_Virus_Remover
 
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            ProgressBar pBar = new ProgressBar();
+            textBox2.Hide();
+            textBox1.Enabled = true;
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+            ProgressBar pBar = new ProgressBar();
+            pBar.Location = new System.Drawing.Point(200, 300);
+            pBar.Name = "progressBar1";
+            pBar.Width = 200;
+            pBar.Height = 20;
+            Controls.Add(pBar);
+            pBar.Minimum = 0;
+            pBar.Maximum = 100;
+            pBar.Value = 100;
+        }
     }
 }
+    
