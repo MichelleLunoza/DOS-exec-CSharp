@@ -64,6 +64,23 @@ namespace Shorcut_Virus_Remover.DAL
                 }
             }
         }
+
+        protected override void SaveScanHistoryDAL(ShortcutInfo shortcutinfo)
+        {
+            //this will be the connection in sql
+            using (var con = new SqlConnection(conStr))
+            {
+                //create sql command name
+                //the name of the one you've create in the sql 
+                using (var cmd = new SqlCommand("SaveScanHistory", con))
+                {
+                    cmd.Parameters.Add("@Date_Time", SqlDbType.DateTime).Value = shortcutinfo.ScanHistory.ToString("d - MMM - yyyy hh:mm:ss");
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }
  

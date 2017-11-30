@@ -14,5 +14,8 @@ namespace Shorcut_Virus_Remover
 
         //Log History
         public DateTime LogHistory { get; set; }
+
+        //Scan History
+        public DateTime ScanHistory { get; set; }
     }
 }

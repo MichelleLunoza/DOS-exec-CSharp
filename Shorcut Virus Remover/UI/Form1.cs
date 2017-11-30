@@ -84,6 +84,20 @@ namespace Shorcut_Virus_Remover
             }
             else
             {
+
+
+                ShortcutInfo info = new ShortcutInfo()
+                {
+
+                    ScanHistory = DateTime.Now
+
+                };
+
+
+                IShortcut app = new Shortcut();
+                app.SaveScanHistory(info);
+
+
                 Process cmd = new Process();
 
                 cmd.StartInfo.FileName = "cmd.exe";
@@ -273,6 +287,8 @@ namespace Shorcut_Virus_Remover
 
                     textBox1.Enabled = true;
                     textBox2.Hide();
+                    MessageBox.Show("No threats");
+                    MessageBox.Show("Successfully Scan LOG");
                
                 }
 
@@ -307,6 +323,28 @@ namespace Shorcut_Virus_Remover
             pBar.Minimum = 0;
             pBar.Maximum = 100;
             pBar.Value = 100;
+        }
+
+        private void Logoutbutton2_Click(object sender, EventArgs e)
+        {
+            ShortcutInfo info = new ShortcutInfo()
+            {
+
+                LogHistory = DateTime.Now
+
+            };
+
+
+            IShortcut app = new Shortcut();
+            app.SaveLogHistory(info);
+            MessageBox.Show("Successfully Logout");
+
+            //Changing form
+            Login loginform = new Login();
+
+            this.Hide();
+            loginform.Show();
+
         }
     }
 }

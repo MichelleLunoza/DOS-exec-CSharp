@@ -47,13 +47,13 @@
   <ItemGroup>
     <Compile Include="BLL\ShortcutBLL.cs" />
     <Compile Include="DAL\ShortcutDAL.cs" />
+    <Compile Include="Shortcut.cs" />
     <Compile Include="Shortcut_Virus_RemoverDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Shortcut_Virus_RemoverDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="UI\IShortcut.cs" />
-    <Compile Include="Shortcut.cs" />
     <Compile Include="ShortcutInfo.cs" />
     <Compile Include="UI\Form1.cs">
       <SubType>Form</SubType>
