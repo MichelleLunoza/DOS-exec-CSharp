@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Loginbutton1 = new System.Windows.Forms.Button();
             this.Clearbutton2 = new System.Windows.Forms.Button();
+            this.Forgotbutton1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -70,28 +71,39 @@
             // 
             // Loginbutton1
             // 
-            this.Loginbutton1.Location = new System.Drawing.Point(151, 238);
+            this.Loginbutton1.Location = new System.Drawing.Point(168, 233);
             this.Loginbutton1.Name = "Loginbutton1";
-            this.Loginbutton1.Size = new System.Drawing.Size(139, 33);
+            this.Loginbutton1.Size = new System.Drawing.Size(127, 27);
             this.Loginbutton1.TabIndex = 4;
             this.Loginbutton1.Text = "Login";
             this.Loginbutton1.UseVisualStyleBackColor = true;
+            this.Loginbutton1.Click += new System.EventHandler(this.Loginbutton1_Click);
             // 
             // Clearbutton2
             // 
-            this.Clearbutton2.Location = new System.Drawing.Point(309, 238);
+            this.Clearbutton2.Location = new System.Drawing.Point(301, 233);
             this.Clearbutton2.Name = "Clearbutton2";
-            this.Clearbutton2.Size = new System.Drawing.Size(139, 33);
+            this.Clearbutton2.Size = new System.Drawing.Size(127, 27);
             this.Clearbutton2.TabIndex = 5;
             this.Clearbutton2.Text = "Clear";
             this.Clearbutton2.UseVisualStyleBackColor = true;
             this.Clearbutton2.Click += new System.EventHandler(this.Clearbutton2_Click);
+            // 
+            // Forgotbutton1
+            // 
+            this.Forgotbutton1.Location = new System.Drawing.Point(242, 266);
+            this.Forgotbutton1.Name = "Forgotbutton1";
+            this.Forgotbutton1.Size = new System.Drawing.Size(127, 27);
+            this.Forgotbutton1.TabIndex = 6;
+            this.Forgotbutton1.Text = "Forgot Password";
+            this.Forgotbutton1.UseVisualStyleBackColor = true;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(633, 385);
+            this.Controls.Add(this.Forgotbutton1);
             this.Controls.Add(this.Clearbutton2);
             this.Controls.Add(this.Loginbutton1);
             this.Controls.Add(this.textBox2);
@@ -100,6 +112,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,5 +126,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Loginbutton1;
         private System.Windows.Forms.Button Clearbutton2;
+        private System.Windows.Forms.Button Forgotbutton1;
     }
 }
