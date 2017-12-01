@@ -53,12 +53,6 @@
     <Compile Include="LogHistory.Designer.cs">
       <DependentUpon>LogHistory.cs</DependentUpon>
     </Compile>
-    <Compile Include="LogHistoryForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LogHistoryForm.Designer.cs">
-      <DependentUpon>LogHistoryForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="ScanHistory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,9 +95,6 @@
     </Compile>
     <EmbeddedResource Include="LogHistory.resx">
       <DependentUpon>LogHistory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LogHistoryForm.resx">
-      <DependentUpon>LogHistoryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ScanHistory.resx">
       <DependentUpon>ScanHistory.cs</DependentUpon>
@@ -168,6 +159,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Book-magnifying-glass-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loghistory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loghistory2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24252248_1846556348720281_774627301_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24282216_1846556342053615_1067765364_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gloskixcpjswrpjcwkjd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24282216_1846556342053615_1067765364_n1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red-user-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

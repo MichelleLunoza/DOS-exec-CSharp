@@ -63,6 +63,36 @@ namespace Shorcut_Virus_Remover.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _24252248_1846556348720281_774627301_n {
+            get {
+                object obj = ResourceManager.GetObject("24252248_1846556348720281_774627301_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _24282216_1846556342053615_1067765364_n {
+            get {
+                object obj = ResourceManager.GetObject("24282216_1846556342053615_1067765364_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _24282216_1846556342053615_1067765364_n1 {
+            get {
+                object obj = ResourceManager.GetObject("24282216_1846556342053615_1067765364_n1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _24321799_1844964838879432_1540883326_o {
             get {
                 object obj = ResourceManager.GetObject("24321799_1844964838879432_1540883326_o", resourceCulture);
@@ -106,6 +136,46 @@ namespace Shorcut_Virus_Remover.Properties {
         internal static System.Drawing.Bitmap dashboard {
             get {
                 object obj = ResourceManager.GetObject("dashboard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gloskixcpjswrpjcwkjd {
+            get {
+                object obj = ResourceManager.GetObject("gloskixcpjswrpjcwkjd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loghistory {
+            get {
+                object obj = ResourceManager.GetObject("loghistory", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loghistory2 {
+            get {
+                object obj = ResourceManager.GetObject("loghistory2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap red_user_icon {
+            get {
+                object obj = ResourceManager.GetObject("red-user-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

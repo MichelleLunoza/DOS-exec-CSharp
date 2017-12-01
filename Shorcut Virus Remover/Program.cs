@@ -16,7 +16,7 @@ namespace Shorcut_Virus_Remover
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ScanHistory());
+            Application.Run(new StartupPage());
         }
     }
 }
