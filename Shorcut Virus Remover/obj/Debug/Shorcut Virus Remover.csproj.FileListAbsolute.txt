@@ -18,3 +18,7 @@ C:\Users\MiGutierrez\Desktop\Git Files\DOS-exec-CSharp\Shorcut Virus Remover\obj
 C:\Users\MiGutierrez\Desktop\Git Files\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut Virus Remover.csproj.GenerateResource.Cache
 C:\Users\MiGutierrez\Desktop\Git Files\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut_Virus_Remover.StartupPage.resources
 C:\Users\MiGutierrez\Desktop\Git Files\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut_Virus_Remover.Login.resources
+C:\Users\MiGutierrez\Desktop\Git Files\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut_Virus_Remover.LogHistory.resources
+C:\Users\MiGutierrez\Desktop\Git Files\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut_Virus_Remover.LogHistoryForm.resources
+C:\Users\MiGutierrez\Desktop\Git Files\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut_Virus_Remover.ScanHistory.resources
+C:\Users\MiGutierrez\Desktop\Git Files\DOS-exec-CSharp\Shorcut Virus Remover\obj\Debug\Shorcut_Virus_Remover.UI.History.resources

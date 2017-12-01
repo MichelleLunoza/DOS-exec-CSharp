@@ -63,9 +63,29 @@ namespace Shorcut_Virus_Remover.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _24321799_1844964838879432_1540883326_o {
+            get {
+                object obj = ResourceManager.GetObject("24321799_1844964838879432_1540883326_o", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BitArmor {
             get {
                 object obj = ResourceManager.GetObject("BitArmor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Book_magnifying_glass_icon {
+            get {
+                object obj = ResourceManager.GetObject("Book-magnifying-glass-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

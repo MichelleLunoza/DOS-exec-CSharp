@@ -308,6 +308,7 @@ namespace Shorcut_Virus_Remover
             ProgressBar pBar = new ProgressBar();
             textBox2.Hide();
             textBox1.Enabled = true;
+            Scanpanel1.Visible = false;
 
         }
 

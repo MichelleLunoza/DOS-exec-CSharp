@@ -36,7 +36,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(144, 175);
+            this.button1.Location = new System.Drawing.Point(188, 231);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(186, 42);
             this.button1.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(348, 175);
+            this.button2.Location = new System.Drawing.Point(392, 231);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(186, 42);
             this.button2.TabIndex = 1;
@@ -56,12 +56,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Shorcut_Virus_Remover.Properties.Resources.BitArmor;
-            this.pictureBox1.Location = new System.Drawing.Point(7, 7);
+            this.pictureBox1.Image = global::Shorcut_Virus_Remover.Properties.Resources._24321799_1844964838879432_1540883326_o;
+            this.pictureBox1.Location = new System.Drawing.Point(-4, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1169, 102);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.Size = new System.Drawing.Size(756, 452);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // StartupPage
@@ -69,10 +69,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(751, 452);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "StartupPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StartupPage";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

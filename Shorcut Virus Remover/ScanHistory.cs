@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace Shorcut_Virus_Remover
 {
@@ -19,10 +20,7 @@ namespace Shorcut_Virus_Remover
 
         private void scan_HistoryBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.scan_HistoryBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.shortcut_Virus_RemoverDataSet);
-
+     
         }
 
         private void ScanHistory_Load(object sender, EventArgs e)
