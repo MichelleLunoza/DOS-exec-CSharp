@@ -47,11 +47,35 @@
   <ItemGroup>
     <Compile Include="BLL\ShortcutBLL.cs" />
     <Compile Include="DAL\ShortcutDAL.cs" />
+    <Compile Include="LogHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogHistory.Designer.cs">
+      <DependentUpon>LogHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogHistoryForm.Designer.cs">
+      <DependentUpon>LogHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanHistory.Designer.cs">
+      <DependentUpon>ScanHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Shortcut.cs" />
     <Compile Include="Shortcut_Virus_RemoverDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Shortcut_Virus_RemoverDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\IShortcut.cs" />
     <Compile Include="ShortcutInfo.cs" />
@@ -75,8 +99,20 @@
     <Compile Include="UI\StartupPage.Designer.cs">
       <DependentUpon>StartupPage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="LogHistory.resx">
+      <DependentUpon>LogHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogHistoryForm.resx">
+      <DependentUpon>LogHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanHistory.resx">
+      <DependentUpon>ScanHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\History.resx">
+      <DependentUpon>History.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
