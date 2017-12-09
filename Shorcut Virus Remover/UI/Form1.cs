@@ -324,6 +324,7 @@ namespace Shorcut_Virus_Remover
             //buttons
             Cancellabel16.Enabled = false;
             Updatelabel17.Enabled= false;
+            checkBox1.Enabled = false;
 
         }
 
@@ -435,6 +436,7 @@ namespace Shorcut_Virus_Remover
             Editlabel16.Enabled = false;
             Updatelabel17.Enabled = true;
             Cancellabel16.Enabled = true;
+            checkBox1.Enabled = true;
         }
 
 
@@ -460,6 +462,7 @@ namespace Shorcut_Virus_Remover
             Editlabel16.Enabled = true;
             Updatelabel17.Enabled = false;
             Cancellabel16.Enabled = false;
+            checkBox1.Enabled = false;
 
             firstnameTextBox.ReadOnly = true;
             lastnameTextBox.ReadOnly = true;
@@ -469,6 +472,14 @@ namespace Shorcut_Virus_Remover
             emailTextBox.ReadOnly = true;
             contact_NumberTextBox.ReadOnly = true;
            
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+                passwordTextBox.PasswordChar = '\0';
+            else
+                passwordTextBox.PasswordChar = '*';
         }
     }
 }

@@ -11,6 +11,7 @@ namespace Shorcut_Virus_Remover
         //Login & Retrieve Info
         public string Username { get; set; }
         public string Password { get; set; }
+        public char PasswordChar { get; set; }
 
         //Log History
         public DateTime LogHistory { get; set; }

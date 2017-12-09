@@ -77,6 +77,7 @@
             this.tableAdapterManager = new Shorcut_Virus_Remover.Shortcut_Virus_RemoverDataSetTableAdapters.TableAdapterManager();
             this.label17 = new System.Windows.Forms.Label();
             this.iDTextBox = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.Scanpanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Dashboardpanel1.SuspendLayout();
@@ -134,7 +135,7 @@
             this.Scanpanel1.Controls.Add(this.textBox1);
             this.Scanpanel1.Controls.Add(this.label2);
             this.Scanpanel1.Controls.Add(this.button1);
-            this.Scanpanel1.Location = new System.Drawing.Point(196, 123);
+            this.Scanpanel1.Location = new System.Drawing.Point(202, 125);
             this.Scanpanel1.Name = "Scanpanel1";
             this.Scanpanel1.Size = new System.Drawing.Size(384, 287);
             this.Scanpanel1.TabIndex = 8;
@@ -318,6 +319,7 @@
             // 
             // Accountpanel1
             // 
+            this.Accountpanel1.Controls.Add(this.checkBox1);
             this.Accountpanel1.Controls.Add(this.iDTextBox);
             this.Accountpanel1.Controls.Add(this.label17);
             this.Accountpanel1.Controls.Add(this.usernameTextBox);
@@ -341,7 +343,7 @@
             this.Accountpanel1.Controls.Add(this.label9);
             this.Accountpanel1.Location = new System.Drawing.Point(89, 127);
             this.Accountpanel1.Name = "Accountpanel1";
-            this.Accountpanel1.Size = new System.Drawing.Size(582, 319);
+            this.Accountpanel1.Size = new System.Drawing.Size(631, 319);
             this.Accountpanel1.TabIndex = 20;
             // 
             // usernameTextBox
@@ -370,6 +372,7 @@
             this.passwordTextBox.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTextBox.Location = new System.Drawing.Point(156, 189);
             this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.ReadOnly = true;
             this.passwordTextBox.Size = new System.Drawing.Size(243, 23);
             this.passwordTextBox.TabIndex = 43;
@@ -441,7 +444,7 @@
             this.Cancellabel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Cancellabel16.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cancellabel16.ForeColor = System.Drawing.Color.Firebrick;
-            this.Cancellabel16.Location = new System.Drawing.Point(466, 197);
+            this.Cancellabel16.Location = new System.Drawing.Point(512, 196);
             this.Cancellabel16.Name = "Cancellabel16";
             this.Cancellabel16.Padding = new System.Windows.Forms.Padding(6, 3, 6, 3);
             this.Cancellabel16.Size = new System.Drawing.Size(96, 31);
@@ -454,7 +457,7 @@
             this.Updatelabel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Updatelabel17.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Updatelabel17.ForeColor = System.Drawing.Color.Firebrick;
-            this.Updatelabel17.Location = new System.Drawing.Point(466, 153);
+            this.Updatelabel17.Location = new System.Drawing.Point(512, 152);
             this.Updatelabel17.Name = "Updatelabel17";
             this.Updatelabel17.Padding = new System.Windows.Forms.Padding(3);
             this.Updatelabel17.Size = new System.Drawing.Size(96, 31);
@@ -468,7 +471,7 @@
             this.Editlabel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Editlabel16.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Editlabel16.ForeColor = System.Drawing.Color.Firebrick;
-            this.Editlabel16.Location = new System.Drawing.Point(466, 109);
+            this.Editlabel16.Location = new System.Drawing.Point(512, 108);
             this.Editlabel16.Name = "Editlabel16";
             this.Editlabel16.Padding = new System.Windows.Forms.Padding(20, 3, 20, 3);
             this.Editlabel16.Size = new System.Drawing.Size(95, 31);
@@ -620,6 +623,17 @@
             this.iDTextBox.Size = new System.Drawing.Size(243, 23);
             this.iDTextBox.TabIndex = 57;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(405, 193);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(82, 17);
+            this.checkBox1.TabIndex = 58;
+            this.checkBox1.Text = "Visible Pass";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -713,6 +727,7 @@
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.TextBox iDTextBox;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
