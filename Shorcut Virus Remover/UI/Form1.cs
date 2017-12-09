@@ -399,7 +399,7 @@ namespace Shorcut_Virus_Remover
 
         private void Helplabel3_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Click the Scan Button and put the drive letter of your external storage/drive. Then click the remove shortcut virus button in order to perform its task.","Help");
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -480,6 +480,33 @@ namespace Shorcut_Virus_Remover
                 passwordTextBox.PasswordChar = '\0';
             else
                 passwordTextBox.PasswordChar = '*';
+        }
+
+        private void Cancellabel16_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to cancel?", "Cancel Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+
+                Editlabel16.Enabled = true;
+                Updatelabel17.Enabled = false;
+                Cancellabel16.Enabled = false;
+                checkBox1.Enabled = false;
+
+                firstnameTextBox.ReadOnly = true;
+                lastnameTextBox.ReadOnly = true;
+                usernameTextBox.ReadOnly = true;
+                addressTextBox.ReadOnly = true;
+                passwordTextBox.ReadOnly = true;
+                emailTextBox.ReadOnly = true;
+                contact_NumberTextBox.ReadOnly = true;
+            }
+            else
+            {
+            }
+
+            
+
+
         }
     }
 }

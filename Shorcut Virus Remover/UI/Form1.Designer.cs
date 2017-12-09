@@ -135,7 +135,7 @@
             this.Scanpanel1.Controls.Add(this.textBox1);
             this.Scanpanel1.Controls.Add(this.label2);
             this.Scanpanel1.Controls.Add(this.button1);
-            this.Scanpanel1.Location = new System.Drawing.Point(202, 125);
+            this.Scanpanel1.Location = new System.Drawing.Point(190, 125);
             this.Scanpanel1.Name = "Scanpanel1";
             this.Scanpanel1.Size = new System.Drawing.Size(384, 287);
             this.Scanpanel1.TabIndex = 8;
@@ -450,6 +450,7 @@
             this.Cancellabel16.Size = new System.Drawing.Size(96, 31);
             this.Cancellabel16.TabIndex = 36;
             this.Cancellabel16.Text = "Cancel";
+            this.Cancellabel16.Click += new System.EventHandler(this.Cancellabel16_Click);
             // 
             // Updatelabel17
             // 
