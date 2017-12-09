@@ -230,7 +230,7 @@
             this.Historylabel4.AutoSize = true;
             this.Historylabel4.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Historylabel4.ForeColor = System.Drawing.Color.Firebrick;
-            this.Historylabel4.Location = new System.Drawing.Point(488, 89);
+            this.Historylabel4.Location = new System.Drawing.Point(493, 89);
             this.Historylabel4.Name = "Historylabel4";
             this.Historylabel4.Size = new System.Drawing.Size(92, 23);
             this.Historylabel4.TabIndex = 14;

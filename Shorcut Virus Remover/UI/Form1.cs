@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using Shorcut_Virus_Remover.UI;
+using System.IO;
 
 
 namespace Shorcut_Virus_Remover
@@ -27,7 +28,24 @@ namespace Shorcut_Virus_Remover
             textBox2.Show();
             textBox1.Enabled = false;
 
-            if (textBox1.Text == "0")
+
+            string drive = Path.GetPathRoot(textBox1.Text + ":");   // e.g. K:\
+
+            if (!Directory.Exists(drive))
+            {
+                MessageBox.Show("Drive " + drive + " not found or inaccessible",
+                                "Error", MessageBoxButtons.OK);
+             
+
+                textBox1.Enabled = true;
+                textBox1.SelectAll();
+                textBox2.Hide();
+
+                return;
+            }
+              
+
+            else if (textBox1.Text == "0")
             {
                 MessageBox.Show("Integer is not allowed.");
                 textBox1.Clear();
@@ -83,6 +101,8 @@ namespace Shorcut_Virus_Remover
                 textBox1.Clear();
                 textBox1.Focus();
             }
+
+          
             else
             {
 
