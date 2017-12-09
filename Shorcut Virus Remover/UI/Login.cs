@@ -67,6 +67,7 @@ namespace Shorcut_Virus_Remover
 
         private void Login_Load(object sender, EventArgs e)
         {
+          
 
         }
     }

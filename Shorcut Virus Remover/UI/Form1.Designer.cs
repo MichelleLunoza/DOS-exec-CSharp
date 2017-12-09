@@ -34,7 +34,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Scanpanel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.Dashboardlabel3 = new System.Windows.Forms.Label();
             this.Scanlabel3 = new System.Windows.Forms.Label();
             this.Accountlabel3 = new System.Windows.Forms.Label();
@@ -45,34 +47,42 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Dashboardpanel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.Accountpanel1 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.FirstnametextBox3 = new System.Windows.Forms.TextBox();
-            this.LastnametextBox3 = new System.Windows.Forms.TextBox();
-            this.UsernametextBox3 = new System.Windows.Forms.TextBox();
-            this.AddresstextBox3 = new System.Windows.Forms.TextBox();
-            this.EmailtextBox3 = new System.Windows.Forms.TextBox();
-            this.ContacttextBox3 = new System.Windows.Forms.TextBox();
-            this.Editlabel16 = new System.Windows.Forms.Label();
-            this.Updatelabel17 = new System.Windows.Forms.Label();
+            this.usernameTextBox = new System.Windows.Forms.TextBox();
+            this.users_TableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.shortcut_Virus_RemoverDataSet = new Shorcut_Virus_Remover.Shortcut_Virus_RemoverDataSet();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.firstnameTextBox = new System.Windows.Forms.TextBox();
+            this.lastnameTextBox = new System.Windows.Forms.TextBox();
+            this.contact_NumberTextBox = new System.Windows.Forms.TextBox();
+            this.addressTextBox = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.Cancellabel16 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Logoutbutton2 = new System.Windows.Forms.Button();
+            this.Updatelabel17 = new System.Windows.Forms.Label();
+            this.Editlabel16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Logoutbutton2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.users_TableTableAdapter = new Shorcut_Virus_Remover.Shortcut_Virus_RemoverDataSetTableAdapters.Users_TableTableAdapter();
+            this.tableAdapterManager = new Shorcut_Virus_Remover.Shortcut_Virus_RemoverDataSetTableAdapters.TableAdapterManager();
+            this.label17 = new System.Windows.Forms.Label();
+            this.iDTextBox = new System.Windows.Forms.TextBox();
             this.Scanpanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Dashboardpanel1.SuspendLayout();
             this.Accountpanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.users_TableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shortcut_Virus_RemoverDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -124,10 +134,20 @@
             this.Scanpanel1.Controls.Add(this.textBox1);
             this.Scanpanel1.Controls.Add(this.label2);
             this.Scanpanel1.Controls.Add(this.button1);
-            this.Scanpanel1.Location = new System.Drawing.Point(199, 124);
+            this.Scanpanel1.Location = new System.Drawing.Point(196, 123);
             this.Scanpanel1.Name = "Scanpanel1";
             this.Scanpanel1.Size = new System.Drawing.Size(384, 287);
             this.Scanpanel1.TabIndex = 8;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Shorcut_Virus_Remover.Properties.Resources.Book_magnifying_glass_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(134, 19);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(51, 43);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
             // 
             // label1
             // 
@@ -140,6 +160,20 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Scan";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::Shorcut_Virus_Remover.Properties.Resources.remove_shortcut;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.Location = new System.Drawing.Point(98, 222);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(186, 38);
+            this.button1.TabIndex = 2;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Dashboardlabel3
             // 
@@ -256,17 +290,6 @@
             this.Dashboardpanel1.Size = new System.Drawing.Size(704, 288);
             this.Dashboardpanel1.TabIndex = 19;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Firebrick;
-            this.label7.Location = new System.Drawing.Point(10, 15);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(426, 17);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Status: Your Antivirus is not updated. Please update now. ";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -282,17 +305,32 @@
             this.label8.Text = "Update";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Firebrick;
+            this.label7.Location = new System.Drawing.Point(10, 15);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(426, 17);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Status: Your Antivirus is not updated. Please update now. ";
+            // 
             // Accountpanel1
             // 
+            this.Accountpanel1.Controls.Add(this.iDTextBox);
+            this.Accountpanel1.Controls.Add(this.label17);
+            this.Accountpanel1.Controls.Add(this.usernameTextBox);
+            this.Accountpanel1.Controls.Add(this.passwordTextBox);
+            this.Accountpanel1.Controls.Add(this.firstnameTextBox);
+            this.Accountpanel1.Controls.Add(this.lastnameTextBox);
+            this.Accountpanel1.Controls.Add(this.contact_NumberTextBox);
+            this.Accountpanel1.Controls.Add(this.addressTextBox);
+            this.Accountpanel1.Controls.Add(this.emailTextBox);
+            this.Accountpanel1.Controls.Add(this.label16);
             this.Accountpanel1.Controls.Add(this.Cancellabel16);
             this.Accountpanel1.Controls.Add(this.Updatelabel17);
             this.Accountpanel1.Controls.Add(this.Editlabel16);
-            this.Accountpanel1.Controls.Add(this.ContacttextBox3);
-            this.Accountpanel1.Controls.Add(this.EmailtextBox3);
-            this.Accountpanel1.Controls.Add(this.AddresstextBox3);
-            this.Accountpanel1.Controls.Add(this.UsernametextBox3);
-            this.Accountpanel1.Controls.Add(this.LastnametextBox3);
-            this.Accountpanel1.Controls.Add(this.FirstnametextBox3);
             this.Accountpanel1.Controls.Add(this.label15);
             this.Accountpanel1.Controls.Add(this.label14);
             this.Accountpanel1.Controls.Add(this.label13);
@@ -303,165 +341,99 @@
             this.Accountpanel1.Controls.Add(this.label9);
             this.Accountpanel1.Location = new System.Drawing.Point(89, 127);
             this.Accountpanel1.Name = "Accountpanel1";
-            this.Accountpanel1.Size = new System.Drawing.Size(578, 287);
+            this.Accountpanel1.Size = new System.Drawing.Size(582, 319);
             this.Accountpanel1.TabIndex = 20;
             // 
-            // label9
+            // usernameTextBox
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Firebrick;
-            this.label9.Location = new System.Drawing.Point(252, 22);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(99, 23);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "Account";
+            this.usernameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.users_TableBindingSource, "Username", true));
+            this.usernameTextBox.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameTextBox.Location = new System.Drawing.Point(154, 160);
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.usernameTextBox.ReadOnly = true;
+            this.usernameTextBox.Size = new System.Drawing.Size(243, 23);
+            this.usernameTextBox.TabIndex = 41;
             // 
-            // label10
+            // users_TableBindingSource
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Firebrick;
-            this.label10.Location = new System.Drawing.Point(20, 94);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 17);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "Firstname:";
+            this.users_TableBindingSource.DataMember = "Users_Table";
+            this.users_TableBindingSource.DataSource = this.shortcut_Virus_RemoverDataSet;
             // 
-            // label11
+            // shortcut_Virus_RemoverDataSet
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Firebrick;
-            this.label11.Location = new System.Drawing.Point(20, 123);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 17);
-            this.label11.TabIndex = 22;
-            this.label11.Text = "Lastname:";
+            this.shortcut_Virus_RemoverDataSet.DataSetName = "Shortcut_Virus_RemoverDataSet";
+            this.shortcut_Virus_RemoverDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label12
+            // passwordTextBox
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Firebrick;
-            this.label12.Location = new System.Drawing.Point(20, 153);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(84, 17);
-            this.label12.TabIndex = 23;
-            this.label12.Text = "Username:";
+            this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.users_TableBindingSource, "Password", true));
+            this.passwordTextBox.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTextBox.Location = new System.Drawing.Point(156, 189);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.ReadOnly = true;
+            this.passwordTextBox.Size = new System.Drawing.Size(243, 23);
+            this.passwordTextBox.TabIndex = 43;
             // 
-            // label13
+            // firstnameTextBox
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Firebrick;
-            this.label13.Location = new System.Drawing.Point(20, 182);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(69, 17);
-            this.label13.TabIndex = 25;
-            this.label13.Text = "Address:";
+            this.firstnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.users_TableBindingSource, "Firstname", true));
+            this.firstnameTextBox.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstnameTextBox.Location = new System.Drawing.Point(154, 99);
+            this.firstnameTextBox.Name = "firstnameTextBox";
+            this.firstnameTextBox.ReadOnly = true;
+            this.firstnameTextBox.Size = new System.Drawing.Size(243, 23);
+            this.firstnameTextBox.TabIndex = 45;
             // 
-            // label14
+            // lastnameTextBox
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Firebrick;
-            this.label14.Location = new System.Drawing.Point(20, 214);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 17);
-            this.label14.TabIndex = 26;
-            this.label14.Text = "Email:";
+            this.lastnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.users_TableBindingSource, "Lastname", true));
+            this.lastnameTextBox.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastnameTextBox.Location = new System.Drawing.Point(156, 131);
+            this.lastnameTextBox.Name = "lastnameTextBox";
+            this.lastnameTextBox.ReadOnly = true;
+            this.lastnameTextBox.Size = new System.Drawing.Size(241, 23);
+            this.lastnameTextBox.TabIndex = 49;
             // 
-            // label15
+            // contact_NumberTextBox
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Firebrick;
-            this.label15.Location = new System.Drawing.Point(20, 240);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(129, 17);
-            this.label15.TabIndex = 27;
-            this.label15.Text = "Contact Number:";
+            this.contact_NumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.users_TableBindingSource, "Contact_Number", true));
+            this.contact_NumberTextBox.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contact_NumberTextBox.Location = new System.Drawing.Point(156, 276);
+            this.contact_NumberTextBox.Name = "contact_NumberTextBox";
+            this.contact_NumberTextBox.ReadOnly = true;
+            this.contact_NumberTextBox.Size = new System.Drawing.Size(241, 23);
+            this.contact_NumberTextBox.TabIndex = 51;
             // 
-            // FirstnametextBox3
+            // addressTextBox
             // 
-            this.FirstnametextBox3.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstnametextBox3.Location = new System.Drawing.Point(157, 88);
-            this.FirstnametextBox3.Name = "FirstnametextBox3";
-            this.FirstnametextBox3.ReadOnly = true;
-            this.FirstnametextBox3.Size = new System.Drawing.Size(243, 23);
-            this.FirstnametextBox3.TabIndex = 28;
+            this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.users_TableBindingSource, "Address", true));
+            this.addressTextBox.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressTextBox.Location = new System.Drawing.Point(154, 218);
+            this.addressTextBox.Name = "addressTextBox";
+            this.addressTextBox.ReadOnly = true;
+            this.addressTextBox.Size = new System.Drawing.Size(243, 23);
+            this.addressTextBox.TabIndex = 53;
             // 
-            // LastnametextBox3
+            // emailTextBox
             // 
-            this.LastnametextBox3.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastnametextBox3.Location = new System.Drawing.Point(157, 117);
-            this.LastnametextBox3.Name = "LastnametextBox3";
-            this.LastnametextBox3.ReadOnly = true;
-            this.LastnametextBox3.Size = new System.Drawing.Size(243, 23);
-            this.LastnametextBox3.TabIndex = 29;
+            this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.users_TableBindingSource, "Email", true));
+            this.emailTextBox.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailTextBox.Location = new System.Drawing.Point(154, 247);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.ReadOnly = true;
+            this.emailTextBox.Size = new System.Drawing.Size(243, 23);
+            this.emailTextBox.TabIndex = 55;
             // 
-            // UsernametextBox3
+            // label16
             // 
-            this.UsernametextBox3.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernametextBox3.Location = new System.Drawing.Point(159, 147);
-            this.UsernametextBox3.Name = "UsernametextBox3";
-            this.UsernametextBox3.ReadOnly = true;
-            this.UsernametextBox3.Size = new System.Drawing.Size(243, 23);
-            this.UsernametextBox3.TabIndex = 30;
-            // 
-            // AddresstextBox3
-            // 
-            this.AddresstextBox3.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddresstextBox3.Location = new System.Drawing.Point(159, 176);
-            this.AddresstextBox3.Name = "AddresstextBox3";
-            this.AddresstextBox3.ReadOnly = true;
-            this.AddresstextBox3.Size = new System.Drawing.Size(243, 23);
-            this.AddresstextBox3.TabIndex = 31;
-            // 
-            // EmailtextBox3
-            // 
-            this.EmailtextBox3.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailtextBox3.Location = new System.Drawing.Point(157, 205);
-            this.EmailtextBox3.Name = "EmailtextBox3";
-            this.EmailtextBox3.ReadOnly = true;
-            this.EmailtextBox3.Size = new System.Drawing.Size(243, 23);
-            this.EmailtextBox3.TabIndex = 32;
-            // 
-            // ContacttextBox3
-            // 
-            this.ContacttextBox3.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ContacttextBox3.Location = new System.Drawing.Point(157, 234);
-            this.ContacttextBox3.Name = "ContacttextBox3";
-            this.ContacttextBox3.ReadOnly = true;
-            this.ContacttextBox3.Size = new System.Drawing.Size(243, 23);
-            this.ContacttextBox3.TabIndex = 33;
-            // 
-            // Editlabel16
-            // 
-            this.Editlabel16.AutoSize = true;
-            this.Editlabel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Editlabel16.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Editlabel16.ForeColor = System.Drawing.Color.Firebrick;
-            this.Editlabel16.Location = new System.Drawing.Point(466, 109);
-            this.Editlabel16.Name = "Editlabel16";
-            this.Editlabel16.Padding = new System.Windows.Forms.Padding(20, 3, 20, 3);
-            this.Editlabel16.Size = new System.Drawing.Size(95, 31);
-            this.Editlabel16.TabIndex = 34;
-            this.Editlabel16.Text = "Edit";
-            // 
-            // Updatelabel17
-            // 
-            this.Updatelabel17.AutoSize = true;
-            this.Updatelabel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Updatelabel17.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Updatelabel17.ForeColor = System.Drawing.Color.Firebrick;
-            this.Updatelabel17.Location = new System.Drawing.Point(466, 153);
-            this.Updatelabel17.Name = "Updatelabel17";
-            this.Updatelabel17.Padding = new System.Windows.Forms.Padding(3);
-            this.Updatelabel17.Size = new System.Drawing.Size(96, 31);
-            this.Updatelabel17.TabIndex = 35;
-            this.Updatelabel17.Text = "Update";
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Firebrick;
+            this.label16.Location = new System.Drawing.Point(22, 189);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(78, 17);
+            this.label16.TabIndex = 37;
+            this.label16.Text = "Password:";
             // 
             // Cancellabel16
             // 
@@ -476,29 +448,120 @@
             this.Cancellabel16.TabIndex = 36;
             this.Cancellabel16.Text = "Cancel";
             // 
-            // pictureBox2
+            // Updatelabel17
             // 
-            this.pictureBox2.Image = global::Shorcut_Virus_Remover.Properties.Resources.Book_magnifying_glass_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(134, 19);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(51, 43);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
+            this.Updatelabel17.AutoSize = true;
+            this.Updatelabel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Updatelabel17.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Updatelabel17.ForeColor = System.Drawing.Color.Firebrick;
+            this.Updatelabel17.Location = new System.Drawing.Point(466, 153);
+            this.Updatelabel17.Name = "Updatelabel17";
+            this.Updatelabel17.Padding = new System.Windows.Forms.Padding(3);
+            this.Updatelabel17.Size = new System.Drawing.Size(96, 31);
+            this.Updatelabel17.TabIndex = 35;
+            this.Updatelabel17.Text = "Update";
+            this.Updatelabel17.Click += new System.EventHandler(this.Updatelabel17_Click);
             // 
-            // button1
+            // Editlabel16
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::Shorcut_Virus_Remover.Properties.Resources.remove_shortcut;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button1.Location = new System.Drawing.Point(98, 222);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 38);
-            this.button1.TabIndex = 2;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Editlabel16.AutoSize = true;
+            this.Editlabel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Editlabel16.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Editlabel16.ForeColor = System.Drawing.Color.Firebrick;
+            this.Editlabel16.Location = new System.Drawing.Point(466, 109);
+            this.Editlabel16.Name = "Editlabel16";
+            this.Editlabel16.Padding = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.Editlabel16.Size = new System.Drawing.Size(95, 31);
+            this.Editlabel16.TabIndex = 34;
+            this.Editlabel16.Text = "Edit";
+            this.Editlabel16.Click += new System.EventHandler(this.Editlabel16_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Firebrick;
+            this.label15.Location = new System.Drawing.Point(21, 276);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(129, 17);
+            this.label15.TabIndex = 27;
+            this.label15.Text = "Contact Number:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Firebrick;
+            this.label14.Location = new System.Drawing.Point(22, 248);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(51, 17);
+            this.label14.TabIndex = 26;
+            this.label14.Text = "Email:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Firebrick;
+            this.label13.Location = new System.Drawing.Point(22, 218);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(69, 17);
+            this.label13.TabIndex = 25;
+            this.label13.Text = "Address:";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Shorcut_Virus_Remover.Properties.Resources.red_user_icon;
+            this.pictureBox3.Location = new System.Drawing.Point(215, 4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(51, 43);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 24;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Firebrick;
+            this.label12.Location = new System.Drawing.Point(22, 161);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(84, 17);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "Username:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Firebrick;
+            this.label11.Location = new System.Drawing.Point(22, 132);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(79, 17);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Lastname:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Firebrick;
+            this.label10.Location = new System.Drawing.Point(22, 105);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(82, 17);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Firstname:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Firebrick;
+            this.label9.Location = new System.Drawing.Point(266, 15);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(99, 23);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Account";
             // 
             // Logoutbutton2
             // 
@@ -513,16 +576,6 @@
             this.Logoutbutton2.UseVisualStyleBackColor = false;
             this.Logoutbutton2.Click += new System.EventHandler(this.Logoutbutton2_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Shorcut_Virus_Remover.Properties.Resources.red_user_icon;
-            this.pictureBox3.Location = new System.Drawing.Point(201, 11);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(51, 43);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 24;
-            this.pictureBox3.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Shorcut_Virus_Remover.Properties.Resources._24321799_1844964838879432_1540883326_o;
@@ -534,12 +587,45 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // users_TableTableAdapter
+            // 
+            this.users_TableTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Log_HistoryTableAdapter = null;
+            this.tableAdapterManager.Scan_HistoryTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = Shorcut_Virus_Remover.Shortcut_Virus_RemoverDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.Users_TableTableAdapter = this.users_TableTableAdapter;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Firebrick;
+            this.label17.Location = new System.Drawing.Point(22, 76);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(28, 17);
+            this.label17.TabIndex = 56;
+            this.label17.Text = "ID:";
+            // 
+            // iDTextBox
+            // 
+            this.iDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.users_TableBindingSource, "ID", true));
+            this.iDTextBox.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iDTextBox.Location = new System.Drawing.Point(156, 70);
+            this.iDTextBox.Name = "iDTextBox";
+            this.iDTextBox.ReadOnly = true;
+            this.iDTextBox.Size = new System.Drawing.Size(243, 23);
+            this.iDTextBox.TabIndex = 57;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(751, 452);
+            this.ClientSize = new System.Drawing.Size(757, 452);
             this.Controls.Add(this.Scanpanel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -563,11 +649,13 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Scanpanel1.ResumeLayout(false);
             this.Scanpanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Dashboardpanel1.ResumeLayout(false);
             this.Dashboardpanel1.PerformLayout();
             this.Accountpanel1.ResumeLayout(false);
             this.Accountpanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.users_TableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shortcut_Virus_RemoverDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -608,15 +696,23 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox ContacttextBox3;
-        private System.Windows.Forms.TextBox EmailtextBox3;
-        private System.Windows.Forms.TextBox AddresstextBox3;
-        private System.Windows.Forms.TextBox UsernametextBox3;
-        private System.Windows.Forms.TextBox LastnametextBox3;
-        private System.Windows.Forms.TextBox FirstnametextBox3;
         private System.Windows.Forms.Label Cancellabel16;
         private System.Windows.Forms.Label Updatelabel17;
         private System.Windows.Forms.Label Editlabel16;
+        private System.Windows.Forms.Label label16;
+        private Shortcut_Virus_RemoverDataSet shortcut_Virus_RemoverDataSet;
+        private System.Windows.Forms.BindingSource users_TableBindingSource;
+        private Shortcut_Virus_RemoverDataSetTableAdapters.Users_TableTableAdapter users_TableTableAdapter;
+        private Shortcut_Virus_RemoverDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.TextBox firstnameTextBox;
+        private System.Windows.Forms.TextBox lastnameTextBox;
+        private System.Windows.Forms.TextBox contact_NumberTextBox;
+        private System.Windows.Forms.TextBox addressTextBox;
+        private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.TextBox iDTextBox;
+        private System.Windows.Forms.Label label17;
     }
 }
 

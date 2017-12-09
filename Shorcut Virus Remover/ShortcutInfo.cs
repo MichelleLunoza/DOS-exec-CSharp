@@ -8,7 +8,7 @@ namespace Shorcut_Virus_Remover
 {
     public class ShortcutInfo
     {
-        //Login
+        //Login & Retrieve Info
         public string Username { get; set; }
         public string Password { get; set; }
 
@@ -17,5 +17,7 @@ namespace Shorcut_Virus_Remover
 
         //Scan History
         public DateTime ScanHistory { get; set; }
+
+
     }
 }

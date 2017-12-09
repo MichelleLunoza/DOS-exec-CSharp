@@ -313,11 +313,17 @@ namespace Shorcut_Virus_Remover
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'shortcut_Virus_RemoverDataSet.Users_Table' table. You can move, or remove it, as needed.
+            this.users_TableTableAdapter.Fill(this.shortcut_Virus_RemoverDataSet.Users_Table);
             ProgressBar pBar = new ProgressBar();
             textBox2.Hide();
             textBox1.Enabled = true;
             Scanpanel1.Visible = false;
             Accountpanel1.Visible = false;
+
+            //buttons
+            Cancellabel16.Enabled = false;
+            Updatelabel17.Enabled= false;
 
         }
 
@@ -383,7 +389,6 @@ namespace Shorcut_Virus_Remover
             Dashboardpanel1.Visible = false;
             Scanpanel1.Visible = false;
         }
-
         private void Dashboardlabel3_Click(object sender, EventArgs e)
         {
             Dashboardpanel1.Visible = true;
@@ -415,6 +420,55 @@ namespace Shorcut_Virus_Remover
         {
             MessageBox.Show("Update is not available this time. Please try again later.","Update Failed",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
         
+        }
+
+        private void Editlabel16_Click(object sender, EventArgs e)
+        {
+            firstnameTextBox.ReadOnly = false;
+            lastnameTextBox.ReadOnly = false;
+            usernameTextBox.ReadOnly = false;
+            addressTextBox.ReadOnly = false;
+            passwordTextBox.ReadOnly = false;
+            emailTextBox.ReadOnly = false;
+            contact_NumberTextBox.ReadOnly = false;
+
+            Editlabel16.Enabled = false;
+            Updatelabel17.Enabled = true;
+            Cancellabel16.Enabled = true;
+        }
+
+
+          
+
+        private void users_TableBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.users_TableBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.shortcut_Virus_RemoverDataSet);
+
+        }
+
+        private void Updatelabel17_Click(object sender, EventArgs e)
+        {
+           
+            this.Validate();
+            this.users_TableBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.shortcut_Virus_RemoverDataSet);
+
+            MessageBox.Show("Successfully Update Information");
+
+            Editlabel16.Enabled = true;
+            Updatelabel17.Enabled = false;
+            Cancellabel16.Enabled = false;
+
+            firstnameTextBox.ReadOnly = true;
+            lastnameTextBox.ReadOnly = true;
+            usernameTextBox.ReadOnly = true;
+            addressTextBox.ReadOnly = true;
+            passwordTextBox.ReadOnly = true;
+            emailTextBox.ReadOnly = true;
+            contact_NumberTextBox.ReadOnly = true;
+           
         }
     }
 }

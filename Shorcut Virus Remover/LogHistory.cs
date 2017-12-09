@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace Shorcut_Virus_Remover
 {
@@ -22,6 +23,7 @@ namespace Shorcut_Virus_Remover
         {
             // TODO: This line of code loads data into the 'shortcut_Virus_RemoverDataSet.Log_History' table. You can move, or remove it, as needed.
             this.log_HistoryTableAdapter.Fill(this.shortcut_Virus_RemoverDataSet.Log_History);
+            
 
         }
 
@@ -32,6 +34,12 @@ namespace Shorcut_Virus_Remover
 
             this.Hide();
             Hform.Show();
+        }
+
+  
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.Clearbutton2 = new System.Windows.Forms.Button();
@@ -38,8 +39,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Loginbutton1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.shortcut_Virus_RemoverDataSet = new Shorcut_Virus_Remover.Shortcut_Virus_RemoverDataSet();
+            this.retrieveDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.retrieveDataTableAdapter = new Shorcut_Virus_Remover.Shortcut_Virus_RemoverDataSetTableAdapters.RetrieveDataTableAdapter();
+            this.tableAdapterManager = new Shorcut_Virus_Remover.Shortcut_Virus_RemoverDataSetTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shortcut_Virus_RemoverDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.retrieveDataBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -134,6 +141,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.retrieveDataBindingSource, "Username", true));
             this.pictureBox2.Image = global::Shorcut_Virus_Remover.Properties.Resources._24321799_1844964838879432_1540883326_o;
             this.pictureBox2.Location = new System.Drawing.Point(0, 1);
             this.pictureBox2.Name = "pictureBox2";
@@ -141,6 +149,29 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
+            // 
+            // shortcut_Virus_RemoverDataSet
+            // 
+            this.shortcut_Virus_RemoverDataSet.DataSetName = "Shortcut_Virus_RemoverDataSet";
+            this.shortcut_Virus_RemoverDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // retrieveDataBindingSource
+            // 
+            this.retrieveDataBindingSource.DataMember = "RetrieveData";
+            this.retrieveDataBindingSource.DataSource = this.shortcut_Virus_RemoverDataSet;
+            // 
+            // retrieveDataTableAdapter
+            // 
+            this.retrieveDataTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.Log_HistoryTableAdapter = null;
+            this.tableAdapterManager.Scan_HistoryTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = Shorcut_Virus_Remover.Shortcut_Virus_RemoverDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.Users_TableTableAdapter = null;
             // 
             // Login
             // 
@@ -163,6 +194,8 @@
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shortcut_Virus_RemoverDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.retrieveDataBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,5 +213,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
+        private Shortcut_Virus_RemoverDataSet shortcut_Virus_RemoverDataSet;
+        private System.Windows.Forms.BindingSource retrieveDataBindingSource;
+        private Shortcut_Virus_RemoverDataSetTableAdapters.RetrieveDataTableAdapter retrieveDataTableAdapter;
+        private Shortcut_Virus_RemoverDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }

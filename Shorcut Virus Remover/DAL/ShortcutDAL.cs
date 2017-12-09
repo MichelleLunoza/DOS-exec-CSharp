@@ -48,6 +48,7 @@ namespace Shorcut_Virus_Remover.DAL
             }
         }
 
+
         protected override void SaveLogHistoryDAL(ShortcutInfo shortcutinfo)
         {
             //this will be the connection in sql
@@ -82,5 +83,4 @@ namespace Shorcut_Virus_Remover.DAL
             }
         }
     }
-}
- 
+}             
