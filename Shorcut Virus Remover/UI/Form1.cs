@@ -29,6 +29,19 @@ namespace Shorcut_Virus_Remover
             textBox1.Enabled = false;
 
 
+
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Please enter drive letter.");
+                textBox1.Clear();
+                textBox1.Focus();
+                textBox2.Visible = false;
+                textBox1.Enabled = true;
+
+                return;
+            }
+
+
             string drive = Path.GetPathRoot(textBox1.Text + ":");   // e.g. K:\
 
             if (!Directory.Exists(drive))
@@ -38,11 +51,12 @@ namespace Shorcut_Virus_Remover
              
 
                 textBox1.Enabled = true;
-                textBox1.SelectAll();
+                textBox1.Clear();
                 textBox2.Hide();
 
                 return;
             }
+
               
 
             else if (textBox1.Text == "0")
@@ -95,13 +109,7 @@ namespace Shorcut_Virus_Remover
                 textBox1.Clear();
                 textBox1.Focus();
             }
-            else if (textBox1.Text == "")
-            {
-                MessageBox.Show("Please enter drive letter.");
-                textBox1.Clear();
-                textBox1.Focus();
-            }
-
+          
           
             else
             {
