@@ -57,7 +57,9 @@ namespace Shorcut_Virus_Remover
             else
             {
 
-                MessageBox.Show("Acces is Denied. Attempt to login");
+                MessageBox.Show("Acces is Denied. Attempt to login.","Login Failed", System.Windows.Forms.MessageBoxButtons.OK,MessageBoxIcon.Error);
+                textBox1.Clear();
+                textBox2.Clear();
             }
 
         }

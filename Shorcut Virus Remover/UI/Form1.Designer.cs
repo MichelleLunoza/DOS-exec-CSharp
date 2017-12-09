@@ -30,59 +30,70 @@
         {
             this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Logoutbutton2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Scanpanel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Dashboardlabel3 = new System.Windows.Forms.Label();
             this.Scanlabel3 = new System.Windows.Forms.Label();
             this.Accountlabel3 = new System.Windows.Forms.Label();
             this.Helplabel3 = new System.Windows.Forms.Label();
-            this.Feedbacklabel4 = new System.Windows.Forms.Label();
+            this.Historylabel4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Dashboardpanel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.Accountpanel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.FirstnametextBox3 = new System.Windows.Forms.TextBox();
+            this.LastnametextBox3 = new System.Windows.Forms.TextBox();
+            this.UsernametextBox3 = new System.Windows.Forms.TextBox();
+            this.AddresstextBox3 = new System.Windows.Forms.TextBox();
+            this.EmailtextBox3 = new System.Windows.Forms.TextBox();
+            this.ContacttextBox3 = new System.Windows.Forms.TextBox();
+            this.Editlabel16 = new System.Windows.Forms.Label();
+            this.Updatelabel17 = new System.Windows.Forms.Label();
+            this.Cancellabel16 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Logoutbutton2 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Scanpanel1.SuspendLayout();
+            this.Dashboardpanel1.SuspendLayout();
+            this.Accountpanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Lime;
-            this.textBox1.Location = new System.Drawing.Point(129, 90);
+            this.textBox1.ForeColor = System.Drawing.Color.Maroon;
+            this.textBox1.Location = new System.Drawing.Point(123, 97);
             this.textBox1.MaxLength = 1;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(215, 20);
             this.textBox1.TabIndex = 1;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Lime;
-            this.button1.Location = new System.Drawing.Point(112, 218);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(171, 39);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Remove Shortcut Virus";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox2.BackColor = System.Drawing.SystemColors.Menu;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Lime;
-            this.textBox2.Location = new System.Drawing.Point(49, 137);
+            this.textBox2.ForeColor = System.Drawing.Color.Maroon;
+            this.textBox2.Location = new System.Drawing.Point(41, 138);
             this.textBox2.MaxLength = 1;
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -95,7 +106,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(31, 90);
+            this.label2.Location = new System.Drawing.Point(25, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 16);
             this.label2.TabIndex = 4;
@@ -105,26 +116,6 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Logoutbutton2
-            // 
-            this.Logoutbutton2.Location = new System.Drawing.Point(618, 12);
-            this.Logoutbutton2.Name = "Logoutbutton2";
-            this.Logoutbutton2.Size = new System.Drawing.Size(111, 32);
-            this.Logoutbutton2.TabIndex = 6;
-            this.Logoutbutton2.Text = "Logout";
-            this.Logoutbutton2.UseVisualStyleBackColor = true;
-            this.Logoutbutton2.Click += new System.EventHandler(this.Logoutbutton2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Shorcut_Virus_Remover.Properties.Resources._24321799_1844964838879432_1540883326_o;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(756, 452);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
             // Scanpanel1
             // 
             this.Scanpanel1.Controls.Add(this.pictureBox2);
@@ -133,27 +124,17 @@
             this.Scanpanel1.Controls.Add(this.textBox1);
             this.Scanpanel1.Controls.Add(this.label2);
             this.Scanpanel1.Controls.Add(this.button1);
-            this.Scanpanel1.Location = new System.Drawing.Point(186, 152);
+            this.Scanpanel1.Location = new System.Drawing.Point(199, 124);
             this.Scanpanel1.Name = "Scanpanel1";
-            this.Scanpanel1.Size = new System.Drawing.Size(384, 277);
+            this.Scanpanel1.Size = new System.Drawing.Size(384, 287);
             this.Scanpanel1.TabIndex = 8;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Shorcut_Virus_Remover.Properties.Resources.Book_magnifying_glass_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(112, 19);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(51, 43);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(160, 30);
+            this.label1.Location = new System.Drawing.Point(182, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 27);
             this.label1.TabIndex = 9;
@@ -163,57 +144,63 @@
             // Dashboardlabel3
             // 
             this.Dashboardlabel3.AutoSize = true;
-            this.Dashboardlabel3.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dashboardlabel3.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dashboardlabel3.ForeColor = System.Drawing.Color.Firebrick;
-            this.Dashboardlabel3.Location = new System.Drawing.Point(12, 87);
+            this.Dashboardlabel3.Location = new System.Drawing.Point(21, 88);
             this.Dashboardlabel3.Name = "Dashboardlabel3";
-            this.Dashboardlabel3.Size = new System.Drawing.Size(145, 27);
+            this.Dashboardlabel3.Size = new System.Drawing.Size(130, 23);
             this.Dashboardlabel3.TabIndex = 10;
             this.Dashboardlabel3.Text = "Dashboard";
+            this.Dashboardlabel3.Click += new System.EventHandler(this.Dashboardlabel3_Click);
             // 
             // Scanlabel3
             // 
             this.Scanlabel3.AutoSize = true;
-            this.Scanlabel3.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Scanlabel3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Scanlabel3.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Scanlabel3.ForeColor = System.Drawing.Color.Firebrick;
-            this.Scanlabel3.Location = new System.Drawing.Point(184, 88);
+            this.Scanlabel3.Location = new System.Drawing.Point(187, 88);
             this.Scanlabel3.Name = "Scanlabel3";
-            this.Scanlabel3.Size = new System.Drawing.Size(69, 27);
+            this.Scanlabel3.Size = new System.Drawing.Size(60, 23);
             this.Scanlabel3.TabIndex = 11;
             this.Scanlabel3.Text = "Scan";
+            this.Scanlabel3.Click += new System.EventHandler(this.Scanlabel3_Click);
             // 
             // Accountlabel3
             // 
             this.Accountlabel3.AutoSize = true;
-            this.Accountlabel3.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Accountlabel3.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Accountlabel3.ForeColor = System.Drawing.Color.Firebrick;
-            this.Accountlabel3.Location = new System.Drawing.Point(287, 88);
+            this.Accountlabel3.Location = new System.Drawing.Point(295, 88);
             this.Accountlabel3.Name = "Accountlabel3";
-            this.Accountlabel3.Size = new System.Drawing.Size(160, 27);
+            this.Accountlabel3.Size = new System.Drawing.Size(140, 23);
             this.Accountlabel3.TabIndex = 12;
             this.Accountlabel3.Text = "My Account";
+            this.Accountlabel3.Click += new System.EventHandler(this.Accountlabel3_Click);
             // 
             // Helplabel3
             // 
             this.Helplabel3.AutoSize = true;
-            this.Helplabel3.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Helplabel3.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Helplabel3.ForeColor = System.Drawing.Color.Firebrick;
             this.Helplabel3.Location = new System.Drawing.Point(649, 88);
             this.Helplabel3.Name = "Helplabel3";
-            this.Helplabel3.Size = new System.Drawing.Size(69, 27);
+            this.Helplabel3.Size = new System.Drawing.Size(60, 23);
             this.Helplabel3.TabIndex = 13;
             this.Helplabel3.Text = "Help";
+            this.Helplabel3.Click += new System.EventHandler(this.Helplabel3_Click);
             // 
-            // Feedbacklabel4
+            // Historylabel4
             // 
-            this.Feedbacklabel4.AutoSize = true;
-            this.Feedbacklabel4.Font = new System.Drawing.Font("Lucida Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Feedbacklabel4.ForeColor = System.Drawing.Color.Firebrick;
-            this.Feedbacklabel4.Location = new System.Drawing.Point(478, 88);
-            this.Feedbacklabel4.Name = "Feedbacklabel4";
-            this.Feedbacklabel4.Size = new System.Drawing.Size(129, 27);
-            this.Feedbacklabel4.TabIndex = 14;
-            this.Feedbacklabel4.Text = "Feedback";
+            this.Historylabel4.AutoSize = true;
+            this.Historylabel4.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Historylabel4.ForeColor = System.Drawing.Color.Firebrick;
+            this.Historylabel4.Location = new System.Drawing.Point(488, 89);
+            this.Historylabel4.Name = "Historylabel4";
+            this.Historylabel4.Size = new System.Drawing.Size(92, 23);
+            this.Historylabel4.TabIndex = 14;
+            this.Historylabel4.Text = "History";
+            this.Historylabel4.Click += new System.EventHandler(this.Historylabel4_Click);
             // 
             // label3
             // 
@@ -254,11 +241,298 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Lucida Sans", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Firebrick;
-            this.label6.Location = new System.Drawing.Point(616, 81);
+            this.label6.Location = new System.Drawing.Point(613, 81);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(23, 33);
             this.label6.TabIndex = 18;
             this.label6.Text = "|";
+            // 
+            // Dashboardpanel1
+            // 
+            this.Dashboardpanel1.Controls.Add(this.label8);
+            this.Dashboardpanel1.Controls.Add(this.label7);
+            this.Dashboardpanel1.Location = new System.Drawing.Point(25, 138);
+            this.Dashboardpanel1.Name = "Dashboardpanel1";
+            this.Dashboardpanel1.Size = new System.Drawing.Size(704, 288);
+            this.Dashboardpanel1.TabIndex = 19;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Firebrick;
+            this.label7.Location = new System.Drawing.Point(10, 15);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(426, 17);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Status: Your Antivirus is not updated. Please update now. ";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label8.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Firebrick;
+            this.label8.Location = new System.Drawing.Point(435, 12);
+            this.label8.Name = "label8";
+            this.label8.Padding = new System.Windows.Forms.Padding(10, 4, 10, 4);
+            this.label8.Size = new System.Drawing.Size(90, 28);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Update";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // Accountpanel1
+            // 
+            this.Accountpanel1.Controls.Add(this.Cancellabel16);
+            this.Accountpanel1.Controls.Add(this.Updatelabel17);
+            this.Accountpanel1.Controls.Add(this.Editlabel16);
+            this.Accountpanel1.Controls.Add(this.ContacttextBox3);
+            this.Accountpanel1.Controls.Add(this.EmailtextBox3);
+            this.Accountpanel1.Controls.Add(this.AddresstextBox3);
+            this.Accountpanel1.Controls.Add(this.UsernametextBox3);
+            this.Accountpanel1.Controls.Add(this.LastnametextBox3);
+            this.Accountpanel1.Controls.Add(this.FirstnametextBox3);
+            this.Accountpanel1.Controls.Add(this.label15);
+            this.Accountpanel1.Controls.Add(this.label14);
+            this.Accountpanel1.Controls.Add(this.label13);
+            this.Accountpanel1.Controls.Add(this.pictureBox3);
+            this.Accountpanel1.Controls.Add(this.label12);
+            this.Accountpanel1.Controls.Add(this.label11);
+            this.Accountpanel1.Controls.Add(this.label10);
+            this.Accountpanel1.Controls.Add(this.label9);
+            this.Accountpanel1.Location = new System.Drawing.Point(89, 127);
+            this.Accountpanel1.Name = "Accountpanel1";
+            this.Accountpanel1.Size = new System.Drawing.Size(578, 287);
+            this.Accountpanel1.TabIndex = 20;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Firebrick;
+            this.label9.Location = new System.Drawing.Point(252, 22);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(99, 23);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Account";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Firebrick;
+            this.label10.Location = new System.Drawing.Point(20, 94);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(82, 17);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Firstname:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Firebrick;
+            this.label11.Location = new System.Drawing.Point(20, 123);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(79, 17);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Lastname:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Firebrick;
+            this.label12.Location = new System.Drawing.Point(20, 153);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(84, 17);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "Username:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Firebrick;
+            this.label13.Location = new System.Drawing.Point(20, 182);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(69, 17);
+            this.label13.TabIndex = 25;
+            this.label13.Text = "Address:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Firebrick;
+            this.label14.Location = new System.Drawing.Point(20, 214);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(51, 17);
+            this.label14.TabIndex = 26;
+            this.label14.Text = "Email:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Lucida Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Firebrick;
+            this.label15.Location = new System.Drawing.Point(20, 240);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(129, 17);
+            this.label15.TabIndex = 27;
+            this.label15.Text = "Contact Number:";
+            // 
+            // FirstnametextBox3
+            // 
+            this.FirstnametextBox3.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstnametextBox3.Location = new System.Drawing.Point(157, 88);
+            this.FirstnametextBox3.Name = "FirstnametextBox3";
+            this.FirstnametextBox3.ReadOnly = true;
+            this.FirstnametextBox3.Size = new System.Drawing.Size(243, 23);
+            this.FirstnametextBox3.TabIndex = 28;
+            // 
+            // LastnametextBox3
+            // 
+            this.LastnametextBox3.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastnametextBox3.Location = new System.Drawing.Point(157, 117);
+            this.LastnametextBox3.Name = "LastnametextBox3";
+            this.LastnametextBox3.ReadOnly = true;
+            this.LastnametextBox3.Size = new System.Drawing.Size(243, 23);
+            this.LastnametextBox3.TabIndex = 29;
+            // 
+            // UsernametextBox3
+            // 
+            this.UsernametextBox3.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsernametextBox3.Location = new System.Drawing.Point(159, 147);
+            this.UsernametextBox3.Name = "UsernametextBox3";
+            this.UsernametextBox3.ReadOnly = true;
+            this.UsernametextBox3.Size = new System.Drawing.Size(243, 23);
+            this.UsernametextBox3.TabIndex = 30;
+            // 
+            // AddresstextBox3
+            // 
+            this.AddresstextBox3.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddresstextBox3.Location = new System.Drawing.Point(159, 176);
+            this.AddresstextBox3.Name = "AddresstextBox3";
+            this.AddresstextBox3.ReadOnly = true;
+            this.AddresstextBox3.Size = new System.Drawing.Size(243, 23);
+            this.AddresstextBox3.TabIndex = 31;
+            // 
+            // EmailtextBox3
+            // 
+            this.EmailtextBox3.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailtextBox3.Location = new System.Drawing.Point(157, 205);
+            this.EmailtextBox3.Name = "EmailtextBox3";
+            this.EmailtextBox3.ReadOnly = true;
+            this.EmailtextBox3.Size = new System.Drawing.Size(243, 23);
+            this.EmailtextBox3.TabIndex = 32;
+            // 
+            // ContacttextBox3
+            // 
+            this.ContacttextBox3.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ContacttextBox3.Location = new System.Drawing.Point(157, 234);
+            this.ContacttextBox3.Name = "ContacttextBox3";
+            this.ContacttextBox3.ReadOnly = true;
+            this.ContacttextBox3.Size = new System.Drawing.Size(243, 23);
+            this.ContacttextBox3.TabIndex = 33;
+            // 
+            // Editlabel16
+            // 
+            this.Editlabel16.AutoSize = true;
+            this.Editlabel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Editlabel16.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Editlabel16.ForeColor = System.Drawing.Color.Firebrick;
+            this.Editlabel16.Location = new System.Drawing.Point(466, 109);
+            this.Editlabel16.Name = "Editlabel16";
+            this.Editlabel16.Padding = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.Editlabel16.Size = new System.Drawing.Size(95, 31);
+            this.Editlabel16.TabIndex = 34;
+            this.Editlabel16.Text = "Edit";
+            // 
+            // Updatelabel17
+            // 
+            this.Updatelabel17.AutoSize = true;
+            this.Updatelabel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Updatelabel17.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Updatelabel17.ForeColor = System.Drawing.Color.Firebrick;
+            this.Updatelabel17.Location = new System.Drawing.Point(466, 153);
+            this.Updatelabel17.Name = "Updatelabel17";
+            this.Updatelabel17.Padding = new System.Windows.Forms.Padding(3);
+            this.Updatelabel17.Size = new System.Drawing.Size(96, 31);
+            this.Updatelabel17.TabIndex = 35;
+            this.Updatelabel17.Text = "Update";
+            // 
+            // Cancellabel16
+            // 
+            this.Cancellabel16.AutoSize = true;
+            this.Cancellabel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Cancellabel16.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancellabel16.ForeColor = System.Drawing.Color.Firebrick;
+            this.Cancellabel16.Location = new System.Drawing.Point(466, 197);
+            this.Cancellabel16.Name = "Cancellabel16";
+            this.Cancellabel16.Padding = new System.Windows.Forms.Padding(6, 3, 6, 3);
+            this.Cancellabel16.Size = new System.Drawing.Size(96, 31);
+            this.Cancellabel16.TabIndex = 36;
+            this.Cancellabel16.Text = "Cancel";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Shorcut_Virus_Remover.Properties.Resources.Book_magnifying_glass_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(134, 19);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(51, 43);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::Shorcut_Virus_Remover.Properties.Resources.remove_shortcut;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.Location = new System.Drawing.Point(98, 222);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(186, 38);
+            this.button1.TabIndex = 2;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Logoutbutton2
+            // 
+            this.Logoutbutton2.BackColor = System.Drawing.Color.Transparent;
+            this.Logoutbutton2.BackgroundImage = global::Shorcut_Virus_Remover.Properties.Resources.logout;
+            this.Logoutbutton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Logoutbutton2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Logoutbutton2.Location = new System.Drawing.Point(629, 18);
+            this.Logoutbutton2.Name = "Logoutbutton2";
+            this.Logoutbutton2.Size = new System.Drawing.Size(91, 32);
+            this.Logoutbutton2.TabIndex = 6;
+            this.Logoutbutton2.UseVisualStyleBackColor = false;
+            this.Logoutbutton2.Click += new System.EventHandler(this.Logoutbutton2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Shorcut_Virus_Remover.Properties.Resources.red_user_icon;
+            this.pictureBox3.Location = new System.Drawing.Point(201, 11);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(51, 43);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 24;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Shorcut_Virus_Remover.Properties.Resources._24321799_1844964838879432_1540883326_o;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(756, 452);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
@@ -266,17 +540,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(751, 452);
+            this.Controls.Add(this.Scanpanel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.Feedbacklabel4);
+            this.Controls.Add(this.Historylabel4);
             this.Controls.Add(this.Helplabel3);
             this.Controls.Add(this.Accountlabel3);
             this.Controls.Add(this.Scanlabel3);
             this.Controls.Add(this.Dashboardlabel3);
-            this.Controls.Add(this.Scanpanel1);
             this.Controls.Add(this.Logoutbutton2);
+            this.Controls.Add(this.Accountpanel1);
+            this.Controls.Add(this.Dashboardpanel1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -285,10 +561,15 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shortcut Virus Remover";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Scanpanel1.ResumeLayout(false);
             this.Scanpanel1.PerformLayout();
+            this.Dashboardpanel1.ResumeLayout(false);
+            this.Dashboardpanel1.PerformLayout();
+            this.Accountpanel1.ResumeLayout(false);
+            this.Accountpanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,11 +591,32 @@
         private System.Windows.Forms.Label Scanlabel3;
         private System.Windows.Forms.Label Accountlabel3;
         private System.Windows.Forms.Label Helplabel3;
-        private System.Windows.Forms.Label Feedbacklabel4;
+        private System.Windows.Forms.Label Historylabel4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel Dashboardpanel1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel Accountpanel1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox ContacttextBox3;
+        private System.Windows.Forms.TextBox EmailtextBox3;
+        private System.Windows.Forms.TextBox AddresstextBox3;
+        private System.Windows.Forms.TextBox UsernametextBox3;
+        private System.Windows.Forms.TextBox LastnametextBox3;
+        private System.Windows.Forms.TextBox FirstnametextBox3;
+        private System.Windows.Forms.Label Cancellabel16;
+        private System.Windows.Forms.Label Updatelabel17;
+        private System.Windows.Forms.Label Editlabel16;
     }
 }
 

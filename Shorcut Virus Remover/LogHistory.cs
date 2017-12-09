@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Shorcut_Virus_Remover.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +23,15 @@ namespace Shorcut_Virus_Remover
             // TODO: This line of code loads data into the 'shortcut_Virus_RemoverDataSet.Log_History' table. You can move, or remove it, as needed.
             this.log_HistoryTableAdapter.Fill(this.shortcut_Virus_RemoverDataSet.Log_History);
 
+        }
+
+        private void Loginbutton1_Click(object sender, EventArgs e)
+        {
+            //Changing form
+            History Hform = new History();
+
+            this.Hide();
+            Hform.Show();
         }
     }
 }

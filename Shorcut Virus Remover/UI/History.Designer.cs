@@ -28,47 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.LogHistorybutton1 = new System.Windows.Forms.Button();
-            this.ScanHistorybutton2 = new System.Windows.Forms.Button();
+            this.LHlabel16 = new System.Windows.Forms.Label();
+            this.SHlabel1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Loginbutton1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // LogHistorybutton1
+            // LHlabel16
             // 
-            this.LogHistorybutton1.Location = new System.Drawing.Point(211, 216);
-            this.LogHistorybutton1.Name = "LogHistorybutton1";
-            this.LogHistorybutton1.Size = new System.Drawing.Size(121, 36);
-            this.LogHistorybutton1.TabIndex = 0;
-            this.LogHistorybutton1.Text = "Log History";
-            this.LogHistorybutton1.UseVisualStyleBackColor = true;
-            this.LogHistorybutton1.Click += new System.EventHandler(this.LogHistorybutton1_Click);
+            this.LHlabel16.AutoSize = true;
+            this.LHlabel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LHlabel16.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LHlabel16.ForeColor = System.Drawing.Color.Firebrick;
+            this.LHlabel16.Location = new System.Drawing.Point(146, 210);
+            this.LHlabel16.Name = "LHlabel16";
+            this.LHlabel16.Padding = new System.Windows.Forms.Padding(20, 6, 20, 6);
+            this.LHlabel16.Size = new System.Drawing.Size(181, 37);
+            this.LHlabel16.TabIndex = 35;
+            this.LHlabel16.Text = "Log History";
+            this.LHlabel16.Click += new System.EventHandler(this.LHlabel16_Click);
             // 
-            // ScanHistorybutton2
+            // SHlabel1
             // 
-            this.ScanHistorybutton2.Location = new System.Drawing.Point(386, 216);
-            this.ScanHistorybutton2.Name = "ScanHistorybutton2";
-            this.ScanHistorybutton2.Size = new System.Drawing.Size(121, 36);
-            this.ScanHistorybutton2.TabIndex = 1;
-            this.ScanHistorybutton2.Text = "Scan History";
-            this.ScanHistorybutton2.UseVisualStyleBackColor = true;
-            this.ScanHistorybutton2.Click += new System.EventHandler(this.ScanHistorybutton2_Click);
+            this.SHlabel1.AutoSize = true;
+            this.SHlabel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SHlabel1.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SHlabel1.ForeColor = System.Drawing.Color.Firebrick;
+            this.SHlabel1.Location = new System.Drawing.Point(374, 210);
+            this.SHlabel1.Name = "SHlabel1";
+            this.SHlabel1.Padding = new System.Windows.Forms.Padding(20, 6, 20, 6);
+            this.SHlabel1.Size = new System.Drawing.Size(191, 37);
+            this.SHlabel1.TabIndex = 36;
+            this.SHlabel1.Text = "Scan History";
+            this.SHlabel1.Click += new System.EventHandler(this.SHlabel1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Shorcut_Virus_Remover.Properties.Resources._24321799_1844964838879432_1540883326_o;
+            this.pictureBox1.Location = new System.Drawing.Point(-3, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(756, 452);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // Loginbutton1
+            // 
+            this.Loginbutton1.BackgroundImage = global::Shorcut_Virus_Remover.Properties.Resources.Back;
+            this.Loginbutton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Loginbutton1.Location = new System.Drawing.Point(12, 80);
+            this.Loginbutton1.Name = "Loginbutton1";
+            this.Loginbutton1.Size = new System.Drawing.Size(97, 39);
+            this.Loginbutton1.TabIndex = 37;
+            this.Loginbutton1.UseVisualStyleBackColor = true;
+            this.Loginbutton1.Click += new System.EventHandler(this.Loginbutton1_Click);
             // 
             // History
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(751, 452);
-            this.Controls.Add(this.ScanHistorybutton2);
-            this.Controls.Add(this.LogHistorybutton1);
+            this.Controls.Add(this.Loginbutton1);
+            this.Controls.Add(this.SHlabel1);
+            this.Controls.Add(this.LHlabel16);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "History";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "History";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button LogHistorybutton1;
-        private System.Windows.Forms.Button ScanHistorybutton2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label LHlabel16;
+        private System.Windows.Forms.Label SHlabel1;
+        private System.Windows.Forms.Button Loginbutton1;
+
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using Shorcut_Virus_Remover.UI;
 
 
 namespace Shorcut_Virus_Remover
@@ -281,14 +282,21 @@ namespace Shorcut_Virus_Remover
                     cmd.StandardInput.WriteLine("DEL /F /Q /A " + directory + ":" + @"\*.abc*");
                     textBox2.Text = textBox2.Text + "\r\n" + "Removing abc files . . .";
 
+                        
+                        textBox1.Enabled = true;
+                     
+
+                        textBox2.Text = textBox2.Text + "\r\n" + "No more shortcut files . . .";
+                        textBox2.SelectionStart = textBox2.Text.Length;
+                        textBox2.ScrollToCaret();
+
+                        MessageBox.Show("No more shortcut files.");
+
                         textBox1.Clear();
                         textBox2.Clear();
-                
-
-                    textBox1.Enabled = true;
-                    textBox2.Hide();
-                    MessageBox.Show("No threats");
-                    MessageBox.Show("Successfully Scan LOG");
+                  
+                  
+               
                
                 }
 
@@ -309,6 +317,7 @@ namespace Shorcut_Virus_Remover
             textBox2.Hide();
             textBox1.Enabled = true;
             Scanpanel1.Visible = false;
+            Accountpanel1.Visible = false;
 
         }
 
@@ -357,6 +366,55 @@ namespace Shorcut_Virus_Remover
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Scanlabel3_Click(object sender, EventArgs e)
+        {
+
+            //Changing panel
+            Scanpanel1.Visible = true;
+            Dashboardpanel1.Visible = false;
+            Accountpanel1.Visible = false;
+        }
+
+        private void Accountlabel3_Click(object sender, EventArgs e)
+        {
+            Accountpanel1.Visible = true;
+            Dashboardpanel1.Visible = false;
+            Scanpanel1.Visible = false;
+        }
+
+        private void Dashboardlabel3_Click(object sender, EventArgs e)
+        {
+            Dashboardpanel1.Visible = true;
+            Scanpanel1.Visible = false;
+            Accountpanel1.Visible = false;
+        }
+
+        private void Helplabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Historylabel4_Click(object sender, EventArgs e)
+        {
+            //Changing form
+            History Historyform = new History();
+
+            this.Hide();
+            Historyform.Show();
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Update is not available this time. Please try again later.","Update Failed",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+        
         }
     }
 }

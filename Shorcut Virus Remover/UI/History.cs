@@ -16,21 +16,36 @@ namespace Shorcut_Virus_Remover.UI
         {
             InitializeComponent();
         }
-
-        private void LogHistorybutton1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            LogHistory logHistoryform = new LogHistory();
 
-            this.Hide();
-            logHistoryform.Show();
         }
 
-        private void ScanHistorybutton2_Click(object sender, EventArgs e)
+        private void LHlabel16_Click(object sender, EventArgs e)
         {
-            ScanHistory scanHistoryform = new ScanHistory();
+            //Changing form
+            LogHistory  logform = new LogHistory();
 
             this.Hide();
-            scanHistoryform.Show();
+            logform.Show();
+        }
+
+        private void SHlabel1_Click(object sender, EventArgs e)
+        {
+            //Changing form
+            ScanHistory scanform = new ScanHistory();
+
+            this.Hide();
+            scanform.Show();
+        }
+
+        private void Loginbutton1_Click(object sender, EventArgs e)
+        {
+            //Changing form
+            Form1 form = new Form1();
+
+            this.Hide();
+            form.Show();
         }
     }
 }

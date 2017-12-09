@@ -35,6 +35,7 @@
             this.shortcut_Virus_RemoverDataSet = new Shorcut_Virus_Remover.Shortcut_Virus_RemoverDataSet();
             this.log_HistoryTableAdapter = new Shorcut_Virus_Remover.Shortcut_Virus_RemoverDataSetTableAdapters.Log_HistoryTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
+            this.Loginbutton1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -92,6 +93,17 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Log History";
             // 
+            // Loginbutton1
+            // 
+            this.Loginbutton1.BackgroundImage = global::Shorcut_Virus_Remover.Properties.Resources.Back;
+            this.Loginbutton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Loginbutton1.Location = new System.Drawing.Point(12, 83);
+            this.Loginbutton1.Name = "Loginbutton1";
+            this.Loginbutton1.Size = new System.Drawing.Size(97, 39);
+            this.Loginbutton1.TabIndex = 6;
+            this.Loginbutton1.UseVisualStyleBackColor = true;
+            this.Loginbutton1.Click += new System.EventHandler(this.Loginbutton1_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Shorcut_Virus_Remover.Properties.Resources.loghistory2;
@@ -117,6 +129,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(751, 452);
+            this.Controls.Add(this.Loginbutton1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
@@ -145,5 +158,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button Loginbutton1;
     }
 }

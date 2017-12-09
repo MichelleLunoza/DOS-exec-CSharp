@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using Shorcut_Virus_Remover.UI;
 
 namespace Shorcut_Virus_Remover
 {
@@ -28,6 +29,15 @@ namespace Shorcut_Virus_Remover
             // TODO: This line of code loads data into the 'shortcut_Virus_RemoverDataSet.Scan_History' table. You can move, or remove it, as needed.
             this.scan_HistoryTableAdapter.Fill(this.shortcut_Virus_RemoverDataSet.Scan_History);
 
+        }
+
+        private void Loginbutton1_Click(object sender, EventArgs e)
+        {
+            //Changing form
+            History Hform = new History();
+
+            this.Hide();
+            Hform.Show();
         }
     }
 }
