@@ -34,9 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Scanpanel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.Dashboardlabel3 = new System.Windows.Forms.Label();
             this.Scanlabel3 = new System.Windows.Forms.Label();
             this.Accountlabel3 = new System.Windows.Forms.Label();
@@ -66,24 +64,28 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.Logoutbutton2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.users_TableTableAdapter = new Shorcut_Virus_Remover.Shortcut_Virus_RemoverDataSetTableAdapters.Users_TableTableAdapter();
             this.tableAdapterManager = new Shorcut_Virus_Remover.Shortcut_Virus_RemoverDataSetTableAdapters.TableAdapterManager();
             this.label17 = new System.Windows.Forms.Label();
             this.iDTextBox = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Logoutbutton2 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.Aboutlabel19 = new System.Windows.Forms.Label();
             this.Scanpanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Dashboardpanel1.SuspendLayout();
             this.Accountpanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.users_TableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shortcut_Virus_RemoverDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -140,16 +142,6 @@
             this.Scanpanel1.Size = new System.Drawing.Size(384, 287);
             this.Scanpanel1.TabIndex = 8;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Shorcut_Virus_Remover.Properties.Resources.Book_magnifying_glass_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(134, 19);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(51, 43);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -161,20 +153,6 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Scan";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::Shorcut_Virus_Remover.Properties.Resources.remove_shortcut;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button1.Location = new System.Drawing.Point(98, 222);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 38);
-            this.button1.TabIndex = 2;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Dashboardlabel3
             // 
@@ -206,7 +184,7 @@
             this.Accountlabel3.AutoSize = true;
             this.Accountlabel3.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Accountlabel3.ForeColor = System.Drawing.Color.Firebrick;
-            this.Accountlabel3.Location = new System.Drawing.Point(295, 88);
+            this.Accountlabel3.Location = new System.Drawing.Point(268, 88);
             this.Accountlabel3.Name = "Accountlabel3";
             this.Accountlabel3.Size = new System.Drawing.Size(140, 23);
             this.Accountlabel3.TabIndex = 12;
@@ -218,7 +196,7 @@
             this.Helplabel3.AutoSize = true;
             this.Helplabel3.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Helplabel3.ForeColor = System.Drawing.Color.Firebrick;
-            this.Helplabel3.Location = new System.Drawing.Point(649, 88);
+            this.Helplabel3.Location = new System.Drawing.Point(669, 90);
             this.Helplabel3.Name = "Helplabel3";
             this.Helplabel3.Size = new System.Drawing.Size(60, 23);
             this.Helplabel3.TabIndex = 13;
@@ -230,7 +208,7 @@
             this.Historylabel4.AutoSize = true;
             this.Historylabel4.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Historylabel4.ForeColor = System.Drawing.Color.Firebrick;
-            this.Historylabel4.Location = new System.Drawing.Point(493, 89);
+            this.Historylabel4.Location = new System.Drawing.Point(434, 89);
             this.Historylabel4.Name = "Historylabel4";
             this.Historylabel4.Size = new System.Drawing.Size(92, 23);
             this.Historylabel4.TabIndex = 14;
@@ -253,7 +231,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Sans", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Firebrick;
-            this.label4.Location = new System.Drawing.Point(258, 81);
+            this.label4.Location = new System.Drawing.Point(247, 82);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(23, 33);
             this.label4.TabIndex = 16;
@@ -265,7 +243,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Sans", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Firebrick;
-            this.label5.Location = new System.Drawing.Point(453, 82);
+            this.label5.Location = new System.Drawing.Point(410, 82);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(23, 33);
             this.label5.TabIndex = 17;
@@ -276,7 +254,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Lucida Sans", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Firebrick;
-            this.label6.Location = new System.Drawing.Point(613, 81);
+            this.label6.Location = new System.Drawing.Point(527, 82);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(23, 33);
             this.label6.TabIndex = 18;
@@ -513,16 +491,6 @@
             this.label13.TabIndex = 25;
             this.label13.Text = "Address:";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Shorcut_Virus_Remover.Properties.Resources.red_user_icon;
-            this.pictureBox3.Location = new System.Drawing.Point(215, 4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(51, 43);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 24;
-            this.pictureBox3.TabStop = false;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -566,30 +534,6 @@
             this.label9.Size = new System.Drawing.Size(99, 23);
             this.label9.TabIndex = 20;
             this.label9.Text = "Account";
-            // 
-            // Logoutbutton2
-            // 
-            this.Logoutbutton2.BackColor = System.Drawing.Color.Transparent;
-            this.Logoutbutton2.BackgroundImage = global::Shorcut_Virus_Remover.Properties.Resources.logout;
-            this.Logoutbutton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Logoutbutton2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Logoutbutton2.Location = new System.Drawing.Point(629, 18);
-            this.Logoutbutton2.Name = "Logoutbutton2";
-            this.Logoutbutton2.Size = new System.Drawing.Size(91, 32);
-            this.Logoutbutton2.TabIndex = 6;
-            this.Logoutbutton2.UseVisualStyleBackColor = false;
-            this.Logoutbutton2.Click += new System.EventHandler(this.Logoutbutton2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Shorcut_Virus_Remover.Properties.Resources._24321799_1844964838879432_1540883326_o;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(756, 452);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // users_TableTableAdapter
             // 
@@ -635,12 +579,95 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Shorcut_Virus_Remover.Properties.Resources.Book_magnifying_glass_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(134, 19);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(51, 43);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::Shorcut_Virus_Remover.Properties.Resources.remove_shortcut;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.Location = new System.Drawing.Point(98, 222);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(186, 38);
+            this.button1.TabIndex = 2;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Logoutbutton2
+            // 
+            this.Logoutbutton2.BackColor = System.Drawing.Color.Transparent;
+            this.Logoutbutton2.BackgroundImage = global::Shorcut_Virus_Remover.Properties.Resources.logout;
+            this.Logoutbutton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Logoutbutton2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Logoutbutton2.Location = new System.Drawing.Point(629, 18);
+            this.Logoutbutton2.Name = "Logoutbutton2";
+            this.Logoutbutton2.Size = new System.Drawing.Size(91, 32);
+            this.Logoutbutton2.TabIndex = 6;
+            this.Logoutbutton2.UseVisualStyleBackColor = false;
+            this.Logoutbutton2.Click += new System.EventHandler(this.Logoutbutton2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Shorcut_Virus_Remover.Properties.Resources.red_user_icon;
+            this.pictureBox3.Location = new System.Drawing.Point(215, 4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(51, 43);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 24;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Shorcut_Virus_Remover.Properties.Resources._24321799_1844964838879432_1540883326_o;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(756, 452);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Lucida Sans", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Firebrick;
+            this.label18.Location = new System.Drawing.Point(640, 82);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(23, 33);
+            this.label18.TabIndex = 21;
+            this.label18.Text = "|";
+            // 
+            // Aboutlabel19
+            // 
+            this.Aboutlabel19.AutoSize = true;
+            this.Aboutlabel19.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Aboutlabel19.ForeColor = System.Drawing.Color.Firebrick;
+            this.Aboutlabel19.Location = new System.Drawing.Point(556, 92);
+            this.Aboutlabel19.Name = "Aboutlabel19";
+            this.Aboutlabel19.Size = new System.Drawing.Size(77, 23);
+            this.Aboutlabel19.TabIndex = 22;
+            this.Aboutlabel19.Text = "About";
+            this.Aboutlabel19.Click += new System.EventHandler(this.Aboutlabel19_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(757, 452);
+            this.Controls.Add(this.Aboutlabel19);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.Scanpanel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -664,13 +691,13 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Scanpanel1.ResumeLayout(false);
             this.Scanpanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Dashboardpanel1.ResumeLayout(false);
             this.Dashboardpanel1.PerformLayout();
             this.Accountpanel1.ResumeLayout(false);
             this.Accountpanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.users_TableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shortcut_Virus_RemoverDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -729,6 +756,8 @@
         private System.Windows.Forms.TextBox iDTextBox;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label Aboutlabel19;
     }
 }
 

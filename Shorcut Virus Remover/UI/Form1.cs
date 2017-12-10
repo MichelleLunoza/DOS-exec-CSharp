@@ -32,7 +32,18 @@ namespace Shorcut_Virus_Remover
 
             if (textBox1.Text == "")
             {
-                MessageBox.Show("Please enter drive letter.");
+                MessageBox.Show("Please enter drive letter.","Failed To Scan",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+                textBox1.Clear();
+                textBox1.Focus();
+                textBox2.Visible = false;
+                textBox1.Enabled = true;
+
+                return;
+            }
+
+            else if (textBox1.Text == "C")
+            {
+                MessageBox.Show("Youve entered local disk drive letter. Please enter a valid drive letter of external memory.","Failed To Scan");
                 textBox1.Clear();
                 textBox1.Focus();
                 textBox2.Visible = false;
@@ -59,56 +70,6 @@ namespace Shorcut_Virus_Remover
 
               
 
-            else if (textBox1.Text == "0")
-            {
-                MessageBox.Show("Integer is not allowed.");
-                textBox1.Clear();
-                textBox1.Focus();
-            }
-            else if (textBox1.Text == "1")
-            {
-                MessageBox.Show("Integer is not allowed.");
-                textBox1.Clear();
-                textBox1.Focus();
-            }
-            else if (textBox1.Text == "2")
-            {
-                MessageBox.Show("Integer is not allowed.");
-            }
-            else if (textBox1.Text == "3")
-            {
-                MessageBox.Show("Integer is not allowed.");
-            }
-            else if (textBox1.Text == "4")
-            {
-                MessageBox.Show("Integer is not allowed.");
-            }
-            else if (textBox1.Text == "5")
-            {
-                MessageBox.Show("Integer is not allowed.");
-            }
-            else if (textBox1.Text == "6")
-            {
-                MessageBox.Show("Integer is not allowed.");
-            }
-            if (textBox1.Text == "7")
-            {
-                MessageBox.Show("Integer is not allowed.");
-            }
-            else if (textBox1.Text == "8")
-            {
-                MessageBox.Show("Integer is not allowed.");
-            }
-            else if (textBox1.Text == "9")
-            {
-                MessageBox.Show("Integer is not allowed.");
-            }
-            else if (textBox1.Text == "C")
-            {
-                MessageBox.Show("Youve entered local disk drive letter. Please enter a valid drive letter of external memory.");
-                textBox1.Clear();
-                textBox1.Focus();
-            }
           
           
             else
@@ -485,7 +446,7 @@ namespace Shorcut_Virus_Remover
             this.users_TableBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.shortcut_Virus_RemoverDataSet);
 
-            MessageBox.Show("Successfully Update Information");
+            MessageBox.Show("Successfully Update Information","Update Sucess");
 
             Editlabel16.Enabled = true;
             Updatelabel17.Enabled = false;
@@ -535,6 +496,11 @@ namespace Shorcut_Virus_Remover
             
 
 
+        }
+
+        private void Aboutlabel19_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("BitArmor is a shortcut antivirus software originally developed to detect and remove computer viruses or malicious software specifically in external storage. \n\n\n Developed By: \n\n Michelle S. Lunoza \n Katleen May D. Culla \n Jeremy Binuya \n\n\n For Educational Purpose, here's the link for the source code. \n https://github.com/MichelleLunoza/DOS-exec-CSharp", "BitArmor - ABOUT", MessageBoxButtons.OK);
         }
     }
 }
