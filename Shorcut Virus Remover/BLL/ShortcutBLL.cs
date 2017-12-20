@@ -19,11 +19,17 @@ namespace Shorcut_Virus_Remover
         {
             SaveScanHistoryDAL(shortcutinfo);
         }
-
+        internal void RetrieveDate(ShortcutInfo shortcutinfo)
+        {
+           RetrieveDateDAL(shortcutinfo);
+        }
         protected abstract bool RetrieveDataDAL(ShortcutInfo shortcutinfo);
+        protected abstract void RetrieveDateDAL(ShortcutInfo shortcutinfo);
         protected abstract void SaveLogHistoryDAL(ShortcutInfo shortcutinfo);
         protected abstract void SaveScanHistoryDAL(ShortcutInfo shortcutinfo);
 
-      
+
+
+        
     }
 }

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using Shorcut_Virus_Remover.UI;
 using System.IO;
+using System.Security.Cryptography;
 
 
 namespace Shorcut_Virus_Remover
@@ -21,6 +22,21 @@ namespace Shorcut_Virus_Remover
             InitializeComponent();
         
         }
+
+        public string CalculateMD5Hash(string input)
+        {
+            MD5 md5 = System.Security.Cryptography.MD5.Create();
+            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
+            byte[] hash = md5.ComputeHash(inputBytes);
+
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < hash.Length; i++)
+            {
+                sb.Append(hash[i].ToString("X2"));
+            }
+            return sb.ToString();
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -76,6 +92,7 @@ namespace Shorcut_Virus_Remover
             {
 
 
+              
                 ShortcutInfo info = new ShortcutInfo()
                 {
 
@@ -98,7 +115,7 @@ namespace Shorcut_Virus_Remover
                 cmd.StartInfo.UseShellExecute = false;
                 cmd.Start();
 
-    
+                string upperString = textBox1.Text.ToUpper();
                 string directory = textBox1.Text;
                 try
                 {
@@ -283,6 +300,7 @@ namespace Shorcut_Virus_Remover
 
                         textBox1.Clear();
                         textBox2.Clear();
+                        textBox2.Visible = false;
                   
                   
                
@@ -312,8 +330,10 @@ namespace Shorcut_Virus_Remover
 
             //buttons
             Cancellabel16.Enabled = false;
-            Updatelabel17.Enabled= false;
+            Updatelabel17.Enabled = false;
             checkBox1.Enabled = false;
+
+          DateTimelabel21.Text = DateTime.Today.ToString("MM/dd/yyyy");
 
         }
 
@@ -418,7 +438,6 @@ namespace Shorcut_Virus_Remover
             lastnameTextBox.ReadOnly = false;
             usernameTextBox.ReadOnly = false;
             addressTextBox.ReadOnly = false;
-            passwordTextBox.ReadOnly = false;
             emailTextBox.ReadOnly = false;
             contact_NumberTextBox.ReadOnly = false;
 
@@ -441,7 +460,8 @@ namespace Shorcut_Virus_Remover
 
         private void Updatelabel17_Click(object sender, EventArgs e)
         {
-           
+            CalculateMD5Hash(passwordTextBox.Text);
+
             this.Validate();
             this.users_TableBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.shortcut_Virus_RemoverDataSet);

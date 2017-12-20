@@ -10,6 +10,7 @@ namespace Shorcut_Virus_Remover
         bool RetrieveData(ShortcutInfo shortcutinfo);
         void SaveLogHistory(ShortcutInfo shortcutinfo);
         void SaveScanHistory(ShortcutInfo shortcutinfo);
+        void RetrieveDate(ShortcutInfo shortcutinfo);
         
 
     }

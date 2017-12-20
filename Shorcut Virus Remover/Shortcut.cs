@@ -27,5 +27,9 @@ namespace Shorcut_Virus_Remover
         {
             bll.SaveScanHistory(shortcutinfo);
         }
+        public void RetrieveDate(ShortcutInfo shortcutinfo)
+        {
+            bll.RetrieveDate(shortcutinfo);
+        }
     }
 }

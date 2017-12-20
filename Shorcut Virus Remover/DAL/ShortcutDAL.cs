@@ -58,7 +58,7 @@ namespace Shorcut_Virus_Remover.DAL
                 //the name of the one you've create in the sql 
                 using (var cmd = new SqlCommand("SaveLogHistory", con))
                 {
-                    cmd.Parameters.Add("@Date_Time", SqlDbType.DateTime).Value = shortcutinfo.LogHistory.ToString("d - MMM - yyyy hh:mm:ss");
+                    cmd.Parameters.Add("@Date_Time", SqlDbType.DateTime).Value = shortcutinfo.LogHistory.ToString(" MM - dd - yyyy HH:mm:ss");
                     cmd.CommandType = CommandType.StoredProcedure;
                     con.Open();
                     cmd.ExecuteNonQuery();
@@ -75,7 +75,29 @@ namespace Shorcut_Virus_Remover.DAL
                 //the name of the one you've create in the sql 
                 using (var cmd = new SqlCommand("SaveScanHistory", con))
                 {
-                    cmd.Parameters.Add("@Date_Time", SqlDbType.DateTime).Value = shortcutinfo.ScanHistory.ToString("d - MMM - yyyy hh:mm:ss");
+                    cmd.Parameters.Add("@Date_Time", SqlDbType.DateTime).Value = shortcutinfo.ScanHistory.ToString(" MM - dd - yyyy HH:mm:ss");
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+
+
+
+        protected override void RetrieveDateDAL(ShortcutInfo shortcutinfo)
+        {
+            //this will be the connection in sql
+            using (var con = new SqlConnection(conStr))
+            {
+                //create sql command name
+                //the name of the one you've create in the sql 
+                using (var cmd = new SqlCommand("RetrieveDate", con))
+                {
+                    cmd.Parameters.Add("@Date_Time", SqlDbType.NVarChar).Value = shortcutinfo.ScanHistory;
+
+
                     cmd.CommandType = CommandType.StoredProcedure;
                     con.Open();
                     cmd.ExecuteNonQuery();
@@ -83,4 +105,5 @@ namespace Shorcut_Virus_Remover.DAL
             }
         }
     }
-}             
+}
+   
